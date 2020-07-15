@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		AA02DBF424BEA09C00FAAFEF /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBF324BEA09C00FAAFEF /* Database.swift */; };
+		AA02DBF824BEA38500FAAFEF /* ScheduledTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBF624BEA38500FAAFEF /* ScheduledTestCase.swift */; };
+		AA02DBFB24BEA39900FAAFEF /* ScheduledTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBFA24BEA39900FAAFEF /* ScheduledTest.swift */; };
+		AA02DBFD24BEA3A400FAAFEF /* RelatedProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBFC24BEA3A400FAAFEF /* RelatedProblem.swift */; };
+		AA02DBFF24BEA43A00FAAFEF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBFE24BEA43A00FAAFEF /* Person.swift */; };
+		AA02DC0124BEA44400FAAFEF /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC0024BEA44400FAAFEF /* Component.swift */; };
+		AA02DC0324BEA45100FAAFEF /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC0224BEA45100FAAFEF /* History.swift */; };
+		AA02DC0524BEA47900FAAFEF /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC0424BEA47800FAAFEF /* String+Date.swift */; };
+		AA02DC0724BEA4B600FAAFEF /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC0624BEA4B600FAAFEF /* Keyword.swift */; };
+		AA02DC0924BEA4BB00FAAFEF /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC0824BEA4BB00FAAFEF /* Label.swift */; };
+		AA02DC0B24BEA4C500FAAFEF /* ProblemPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC0A24BEA4C500FAAFEF /* ProblemPriority.swift */; };
+		AA02DC0D24BEA4CE00FAAFEF /* Resolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC0C24BEA4CE00FAAFEF /* Resolutions.swift */; };
+		AA02DC0F24BEA4D300FAAFEF /* ModernObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC0E24BEA4D300FAAFEF /* ModernObject.swift */; };
+		AA02DC1124BEA4DA00FAAFEF /* ProblemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC1024BEA4DA00FAAFEF /* ProblemState.swift */; };
+		AA02DC1324BEA4E700FAAFEF /* Classifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC1224BEA4E700FAAFEF /* Classifications.swift */; };
+		AA02DC1524BEA4FC00FAAFEF /* String+RegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC1424BEA4FC00FAAFEF /* String+RegEx.swift */; };
 		AAA7BB3E24BD9B9400A58685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */; };
 		AAA7BB4024BD9B9400A58685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB3F24BD9B9400A58685 /* ViewController.swift */; };
 		AAA7BB4224BD9BA100A58685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA7BB4124BD9BA100A58685 /* Assets.xcassets */; };
@@ -100,6 +115,21 @@
 
 /* Begin PBXFileReference section */
 		AA02DBF324BEA09C00FAAFEF /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		AA02DBF624BEA38500FAAFEF /* ScheduledTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledTestCase.swift; sourceTree = "<group>"; };
+		AA02DBFA24BEA39900FAAFEF /* ScheduledTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledTest.swift; sourceTree = "<group>"; };
+		AA02DBFC24BEA3A400FAAFEF /* RelatedProblem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedProblem.swift; sourceTree = "<group>"; };
+		AA02DBFE24BEA43A00FAAFEF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		AA02DC0024BEA44400FAAFEF /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		AA02DC0224BEA45100FAAFEF /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		AA02DC0424BEA47800FAAFEF /* String+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		AA02DC0624BEA4B600FAAFEF /* Keyword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
+		AA02DC0824BEA4BB00FAAFEF /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		AA02DC0A24BEA4C500FAAFEF /* ProblemPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemPriority.swift; sourceTree = "<group>"; };
+		AA02DC0C24BEA4CE00FAAFEF /* Resolutions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolutions.swift; sourceTree = "<group>"; };
+		AA02DC0E24BEA4D300FAAFEF /* ModernObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernObject.swift; sourceTree = "<group>"; };
+		AA02DC1024BEA4DA00FAAFEF /* ProblemState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemState.swift; sourceTree = "<group>"; };
+		AA02DC1224BEA4E700FAAFEF /* Classifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifications.swift; sourceTree = "<group>"; };
+		AA02DC1424BEA4FC00FAAFEF /* String+RegEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RegEx.swift"; sourceTree = "<group>"; };
 		AAA7BB3A24BD9B9400A58685 /* SqliteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA7BB3F24BD9B9400A58685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +172,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA02DBF524BEA36C00FAAFEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA02DC1224BEA4E700FAAFEF /* Classifications.swift */,
+				AA02DC1024BEA4DA00FAAFEF /* ProblemState.swift */,
+				AA02DC0E24BEA4D300FAAFEF /* ModernObject.swift */,
+				AA02DC0C24BEA4CE00FAAFEF /* Resolutions.swift */,
+				AA02DC0A24BEA4C500FAAFEF /* ProblemPriority.swift */,
+				AA02DC0824BEA4BB00FAAFEF /* Label.swift */,
+				AA02DC0624BEA4B600FAAFEF /* Keyword.swift */,
+				AA02DC0224BEA45100FAAFEF /* History.swift */,
+				AA02DC0024BEA44400FAAFEF /* Component.swift */,
+				AA02DBFE24BEA43A00FAAFEF /* Person.swift */,
+				AA02DBFC24BEA3A400FAAFEF /* RelatedProblem.swift */,
+				AA02DBFA24BEA39900FAAFEF /* ScheduledTest.swift */,
+				AA02DBF624BEA38500FAAFEF /* ScheduledTestCase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AAA7BB3124BD9B9400A58685 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +217,9 @@
 		AAA7BB3C24BD9B9400A58685 /* SqliteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA02DC1424BEA4FC00FAAFEF /* String+RegEx.swift */,
+				AA02DC0424BEA47800FAAFEF /* String+Date.swift */,
+				AA02DBF524BEA36C00FAAFEF /* Model */,
 				AA02DBF324BEA09C00FAAFEF /* Database.swift */,
 				AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */,
 				AAA7BB3F24BD9B9400A58685 /* ViewController.swift */,
@@ -406,9 +459,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA02DC0524BEA47900FAAFEF /* String+Date.swift in Sources */,
+				AA02DC0324BEA45100FAAFEF /* History.swift in Sources */,
+				AA02DC0924BEA4BB00FAAFEF /* Label.swift in Sources */,
 				AA02DBF424BEA09C00FAAFEF /* Database.swift in Sources */,
+				AA02DC1524BEA4FC00FAAFEF /* String+RegEx.swift in Sources */,
+				AA02DBFB24BEA39900FAAFEF /* ScheduledTest.swift in Sources */,
 				AAA7BB4024BD9B9400A58685 /* ViewController.swift in Sources */,
+				AA02DC0F24BEA4D300FAAFEF /* ModernObject.swift in Sources */,
+				AA02DC0724BEA4B600FAAFEF /* Keyword.swift in Sources */,
+				AA02DBFD24BEA3A400FAAFEF /* RelatedProblem.swift in Sources */,
+				AA02DBFF24BEA43A00FAAFEF /* Person.swift in Sources */,
+				AA02DC0124BEA44400FAAFEF /* Component.swift in Sources */,
+				AA02DC1324BEA4E700FAAFEF /* Classifications.swift in Sources */,
+				AA02DC0B24BEA4C500FAAFEF /* ProblemPriority.swift in Sources */,
+				AA02DC0D24BEA4CE00FAAFEF /* Resolutions.swift in Sources */,
 				AAA7BB3E24BD9B9400A58685 /* AppDelegate.swift in Sources */,
+				AA02DBF824BEA38500FAAFEF /* ScheduledTestCase.swift in Sources */,
+				AA02DC1124BEA4DA00FAAFEF /* ProblemState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

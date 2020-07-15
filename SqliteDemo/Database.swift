@@ -17,30 +17,32 @@ enum SQLiteError: Error {
     case Internal(message: String)
 }
 
-struct Person {
+struct Cotact: SQLTable {
     var id: Int
     var name: String
     var age: Int
 }
+extension Cotact {
+    static var createStatement: String {
+      return """
+      CREATE TABLE Contact(
+        Id INT PRIMARY KEY NOT NULL,
+        Name CHAR(255)
+      );
+      """
+    }
+}
 
-//class SQLiteDatabase {
-//  private let dbPointer: OpaquePointer?
-//  private init(dbPointer: OpaquePointer?) {
-//    self.dbPointer = dbPointer
-//  }
-//  deinit {
-//    sqlite3_close(dbPointer)
-//  }
-//}
+protocol SQLTable {
+  static var createStatement: String { get }
+}
 /// A raw SQLite connection, suitable for the SQLite C API.
 public typealias SQLiteConnection = OpaquePointer
 
 class Connection {
-    
+
     public let sqliteConnection: SQLiteConnection
-    
     // MARK: - Initializer
-    
     init(_ path: String) throws {
         self.sqliteConnection = try Connection.open(path: path)
     }
@@ -60,6 +62,29 @@ class Connection {
             return sqliteConnection
         }
         throw SQLiteError.Internal(message: "Something wrong in sqlite internal.")
+    }
+}
+
+class SqliteDatabase {
+
+    var sqliteConnection: SQLiteConnection
+    
+    fileprivate var errorMessage: String {
+      if let errorPointer = sqlite3_errmsg(sqliteConnection) {
+        let errorMessage = String(cString: errorPointer)
+        return errorMessage
+      } else {
+        return "No error message provided from sqlite."
+      }
+    }
+
+    func prepareStatement(sql: String) throws -> SQLiteConnection? {
+     var statement: OpaquePointer?
+     guard sqlite3_prepare_v2(sqliteConnection, sql, -1, &statement, nil)
+         == SQLITE_OK else {
+       throw SQLiteError.Prepare(message: errorMessage)
+     }
+     return statement
     }
 }
 //class SqliteManager
