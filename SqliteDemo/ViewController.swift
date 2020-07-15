@@ -7,11 +7,22 @@
 //
 
 import Cocoa
+import SQLite
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        do {
+            var path = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first! + "/" + Bundle.main.bundleIdentifier!
+            // create parent directory iff it doesn’t exist
+            try FileManager.default.createDirectory(
+                atPath: path, withIntermediateDirectories: true, attributes: nil
+            )
+            let db = try Database("\(path)/xx/db1.sqlite3")
+        } catch {
+            print(error)
+        }
 
         // Do any additional setup after loading the view.
     }
