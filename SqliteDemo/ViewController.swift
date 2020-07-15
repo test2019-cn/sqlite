@@ -19,7 +19,7 @@ class ViewController: NSViewController {
             try FileManager.default.createDirectory(
                 atPath: path, withIntermediateDirectories: true, attributes: nil
             )
-            let db = try Database("\(path)/xx/db1.sqlite3")
+            let db = try Connection("\(path)/db.sqlite3")
         } catch {
             print(error)
         }

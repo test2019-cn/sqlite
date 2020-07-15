@@ -35,21 +35,21 @@ struct Person {
 /// A raw SQLite connection, suitable for the SQLite C API.
 public typealias SQLiteConnection = OpaquePointer
 
-class Database {
+class Connection {
     
     public let sqliteConnection: SQLiteConnection
     
     // MARK: - Initializer
     
     init(_ path: String) throws {
-        self.sqliteConnection = try Database.openConnection(path: path)
+        self.sqliteConnection = try Connection.open(path: path)
     }
 
     deinit {
         sqlite3_close(sqliteConnection)
     }
 
-    private static func openConnection(path: String) throws -> SQLiteConnection {
+    private static func open(path: String) throws -> SQLiteConnection {
         // See https://www.sqlite.org/c3ref/open.html
         var sqliteConnection: SQLiteConnection? = nil
         guard sqlite3_open(path, &sqliteConnection) == SQLITE_OK else {

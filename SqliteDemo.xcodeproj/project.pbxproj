@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA02DBF424BEA09C00FAAFEF /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBF324BEA09C00FAAFEF /* Database.swift */; };
 		AAA7BB3E24BD9B9400A58685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */; };
 		AAA7BB4024BD9B9400A58685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB3F24BD9B9400A58685 /* ViewController.swift */; };
 		AAA7BB4224BD9BA100A58685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA7BB4124BD9BA100A58685 /* Assets.xcassets */; };
 		AAA7BB4524BD9BA100A58685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA7BB4324BD9BA100A58685 /* Main.storyboard */; };
 		AAA7BB5124BD9BA100A58685 /* SqliteDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB5024BD9BA100A58685 /* SqliteDemoTests.swift */; };
 		AAA7BB5C24BD9BA100A58685 /* SqliteDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB5B24BD9BA100A58685 /* SqliteDemoUITests.swift */; };
-		AAA7BB6A24BD9BBA00A58685 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB6924BD9BBA00A58685 /* Database.swift */; };
 		AAA7BB9C24BDB99500A58685 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA7BB9324BDB98800A58685 /* SQLite.framework */; };
 		AAA7BB9D24BDB99500A58685 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AAA7BB9324BDB98800A58685 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -99,6 +99,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA02DBF324BEA09C00FAAFEF /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		AAA7BB3A24BD9B9400A58685 /* SqliteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA7BB3F24BD9B9400A58685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +113,6 @@
 		AAA7BB5724BD9BA100A58685 /* SqliteDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA7BB5B24BD9BA100A58685 /* SqliteDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteDemoUITests.swift; sourceTree = "<group>"; };
 		AAA7BB5D24BD9BA100A58685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAA7BB6924BD9BBA00A58685 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		AAA7BB8424BDB98800A58685 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite-2.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +167,7 @@
 		AAA7BB3C24BD9B9400A58685 /* SqliteDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AAA7BB6924BD9BBA00A58685 /* Database.swift */,
+				AA02DBF324BEA09C00FAAFEF /* Database.swift */,
 				AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */,
 				AAA7BB3F24BD9B9400A58685 /* ViewController.swift */,
 				AAA7BB4124BD9BA100A58685 /* Assets.xcassets */,
@@ -406,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAA7BB6A24BD9BBA00A58685 /* Database.swift in Sources */,
+				AA02DBF424BEA09C00FAAFEF /* Database.swift in Sources */,
 				AAA7BB4024BD9B9400A58685 /* ViewController.swift in Sources */,
 				AAA7BB3E24BD9B9400A58685 /* AppDelegate.swift in Sources */,
 			);
