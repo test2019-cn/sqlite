@@ -75,6 +75,6 @@ extension Date {
     }
 
     public var monday: Date? {
-        return self.next(weekday: .monday, direction: .backward)
+        return nil
     }
 }

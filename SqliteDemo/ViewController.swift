@@ -14,12 +14,14 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
-            var path = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first! + "/" + Bundle.main.bundleIdentifier!
+            let path = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first! + "/" + Bundle.main.bundleIdentifier!
             // create parent directory iff it doesn’t exist
             try FileManager.default.createDirectory(
                 atPath: path, withIntermediateDirectories: true, attributes: nil
             )
-            let db = try Connection("\(path)/db.sqlite3")
+            let db = try SqliteDatabase("\(path)/db.sqlite")
+            try db.createTable(table: Contact.self)
+            try db.insertContact(contact: Contact(id:11, name:"ray11"))
         } catch {
             print(error)
         }
