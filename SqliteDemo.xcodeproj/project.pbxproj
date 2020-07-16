@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA02DBF424BEA09C00FAAFEF /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBF324BEA09C00FAAFEF /* Database.swift */; };
 		AA02DBF824BEA38500FAAFEF /* ScheduledTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBF624BEA38500FAAFEF /* ScheduledTestCase.swift */; };
 		AA02DBFB24BEA39900FAAFEF /* ScheduledTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBFA24BEA39900FAAFEF /* ScheduledTest.swift */; };
 		AA02DBFD24BEA3A400FAAFEF /* RelatedProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBFC24BEA3A400FAAFEF /* RelatedProblem.swift */; };
@@ -23,6 +22,14 @@
 		AA02DC1124BEA4DA00FAAFEF /* ProblemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC1024BEA4DA00FAAFEF /* ProblemState.swift */; };
 		AA02DC1324BEA4E700FAAFEF /* Classifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC1224BEA4E700FAAFEF /* Classifications.swift */; };
 		AA02DC1524BEA4FC00FAAFEF /* String+RegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DC1424BEA4FC00FAAFEF /* String+RegEx.swift */; };
+		AA8BC6BC24BFE6CF00F9CF4A /* SQLite+Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BC6B924BFE6CF00F9CF4A /* SQLite+Encoder.swift */; };
+		AA8BC6BD24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BC6BA24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift */; };
+		AA8BC6BE24BFE6CF00F9CF4A /* SQLite+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BC6BB24BFE6CF00F9CF4A /* SQLite+Decoder.swift */; };
+		AA9A7DB924BEDE7C0090AB2B /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A7DB324BEDE7C0090AB2B /* SQLite.swift */; };
+		AA9A7DBB24BEDE7C0090AB2B /* SQLite+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A7DB624BEDE7C0090AB2B /* SQLite+Error.swift */; };
+		AA9A7DBC24BEDE7C0090AB2B /* SQLite+Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A7DB724BEDE7C0090AB2B /* SQLite+Value.swift */; };
+		AA9A7DBD24BEDE7C0090AB2B /* SQLite+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A7DB824BEDE7C0090AB2B /* SQLite+Database.swift */; };
+		AA9A7DC124BEE1240090AB2B /* SQLite+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A7DC024BEE1240090AB2B /* SQLite+Schema.swift */; };
 		AAA7BB3E24BD9B9400A58685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */; };
 		AAA7BB4024BD9B9400A58685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB3F24BD9B9400A58685 /* ViewController.swift */; };
 		AAA7BB4224BD9BA100A58685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA7BB4124BD9BA100A58685 /* Assets.xcassets */; };
@@ -114,7 +121,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA02DBF324BEA09C00FAAFEF /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		AA02DBF624BEA38500FAAFEF /* ScheduledTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledTestCase.swift; sourceTree = "<group>"; };
 		AA02DBFA24BEA39900FAAFEF /* ScheduledTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledTest.swift; sourceTree = "<group>"; };
 		AA02DBFC24BEA3A400FAAFEF /* RelatedProblem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedProblem.swift; sourceTree = "<group>"; };
@@ -130,6 +136,15 @@
 		AA02DC1024BEA4DA00FAAFEF /* ProblemState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemState.swift; sourceTree = "<group>"; };
 		AA02DC1224BEA4E700FAAFEF /* Classifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifications.swift; sourceTree = "<group>"; };
 		AA02DC1424BEA4FC00FAAFEF /* String+RegEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RegEx.swift"; sourceTree = "<group>"; };
+		AA8BC6B124BFE47100F9CF4A /* SQLite+Codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "SQLite+Codable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AA8BC6B924BFE6CF00F9CF4A /* SQLite+Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Encoder.swift"; sourceTree = "<group>"; };
+		AA8BC6BA24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+DateFormatter.swift"; sourceTree = "<group>"; };
+		AA8BC6BB24BFE6CF00F9CF4A /* SQLite+Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Decoder.swift"; sourceTree = "<group>"; };
+		AA9A7DB324BEDE7C0090AB2B /* SQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		AA9A7DB624BEDE7C0090AB2B /* SQLite+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Error.swift"; sourceTree = "<group>"; };
+		AA9A7DB724BEDE7C0090AB2B /* SQLite+Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Value.swift"; sourceTree = "<group>"; };
+		AA9A7DB824BEDE7C0090AB2B /* SQLite+Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Database.swift"; sourceTree = "<group>"; };
+		AA9A7DC024BEE1240090AB2B /* SQLite+Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLite+Schema.swift"; sourceTree = "<group>"; };
 		AAA7BB3A24BD9B9400A58685 /* SqliteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA7BB3F24BD9B9400A58685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +190,8 @@
 		AA02DBF524BEA36C00FAAFEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AA02DC1424BEA4FC00FAAFEF /* String+RegEx.swift */,
+				AA02DC0424BEA47800FAAFEF /* String+Date.swift */,
 				AA02DC1224BEA4E700FAAFEF /* Classifications.swift */,
 				AA02DC1024BEA4DA00FAAFEF /* ProblemState.swift */,
 				AA02DC0E24BEA4D300FAAFEF /* ModernObject.swift */,
@@ -192,9 +209,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AA9A7DB224BEDE7C0090AB2B /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				AA8BC6BA24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift */,
+				AA8BC6BB24BFE6CF00F9CF4A /* SQLite+Decoder.swift */,
+				AA8BC6B924BFE6CF00F9CF4A /* SQLite+Encoder.swift */,
+				AA9A7DB324BEDE7C0090AB2B /* SQLite.swift */,
+				AA9A7DB624BEDE7C0090AB2B /* SQLite+Error.swift */,
+				AA9A7DB724BEDE7C0090AB2B /* SQLite+Value.swift */,
+				AA9A7DB824BEDE7C0090AB2B /* SQLite+Database.swift */,
+				AA9A7DC024BEE1240090AB2B /* SQLite+Schema.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
 		AAA7BB3124BD9B9400A58685 = {
 			isa = PBXGroup;
 			children = (
+				AA8BC6B124BFE47100F9CF4A /* SQLite+Codable.playground */,
 				AAA7BB8424BDB98800A58685 /* SQLite.xcodeproj */,
 				AAA7BB3C24BD9B9400A58685 /* SqliteDemo */,
 				AAA7BB4F24BD9BA100A58685 /* SqliteDemoTests */,
@@ -217,10 +250,8 @@
 		AAA7BB3C24BD9B9400A58685 /* SqliteDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AA02DC1424BEA4FC00FAAFEF /* String+RegEx.swift */,
-				AA02DC0424BEA47800FAAFEF /* String+Date.swift */,
+				AA9A7DB224BEDE7C0090AB2B /* SQLite */,
 				AA02DBF524BEA36C00FAAFEF /* Model */,
-				AA02DBF324BEA09C00FAAFEF /* Database.swift */,
 				AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */,
 				AAA7BB3F24BD9B9400A58685 /* ViewController.swift */,
 				AAA7BB4124BD9BA100A58685 /* Assets.xcassets */,
@@ -460,17 +491,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA02DC0524BEA47900FAAFEF /* String+Date.swift in Sources */,
+				AA9A7DB924BEDE7C0090AB2B /* SQLite.swift in Sources */,
+				AA9A7DBD24BEDE7C0090AB2B /* SQLite+Database.swift in Sources */,
+				AA9A7DBC24BEDE7C0090AB2B /* SQLite+Value.swift in Sources */,
+				AA8BC6BD24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift in Sources */,
+				AA9A7DBB24BEDE7C0090AB2B /* SQLite+Error.swift in Sources */,
 				AA02DC0324BEA45100FAAFEF /* History.swift in Sources */,
 				AA02DC0924BEA4BB00FAAFEF /* Label.swift in Sources */,
-				AA02DBF424BEA09C00FAAFEF /* Database.swift in Sources */,
 				AA02DC1524BEA4FC00FAAFEF /* String+RegEx.swift in Sources */,
 				AA02DBFB24BEA39900FAAFEF /* ScheduledTest.swift in Sources */,
 				AAA7BB4024BD9B9400A58685 /* ViewController.swift in Sources */,
+				AA9A7DC124BEE1240090AB2B /* SQLite+Schema.swift in Sources */,
 				AA02DC0F24BEA4D300FAAFEF /* ModernObject.swift in Sources */,
 				AA02DC0724BEA4B600FAAFEF /* Keyword.swift in Sources */,
+				AA8BC6BC24BFE6CF00F9CF4A /* SQLite+Encoder.swift in Sources */,
 				AA02DBFD24BEA3A400FAAFEF /* RelatedProblem.swift in Sources */,
 				AA02DBFF24BEA43A00FAAFEF /* Person.swift in Sources */,
 				AA02DC0124BEA44400FAAFEF /* Component.swift in Sources */,
+				AA8BC6BE24BFE6CF00F9CF4A /* SQLite+Decoder.swift in Sources */,
 				AA02DC1324BEA4E700FAAFEF /* Classifications.swift in Sources */,
 				AA02DC0B24BEA4C500FAAFEF /* ProblemPriority.swift in Sources */,
 				AA02DC0D24BEA4CE00FAAFEF /* Resolutions.swift in Sources */,
