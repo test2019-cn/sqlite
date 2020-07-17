@@ -8,66 +8,6 @@
 
 import Cocoa
 
-
-struct Task: Equatable {
-    let id: String
-    let title: String
-    let dueDate: Date?
-    let isCompleted: Bool
-
-    private enum CodingKeys: String, CodingKey {
-        case id
-        case title
-        case dueDate
-        case isCompleted
-    }
-}
-
-extension Task: Encodable {
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: Task.CodingKeys.self)
-        try container.encode(id, forKey: .id)
-        try container.encode(title, forKey: .title)
-        try container.encode(dueDate, forKey: .dueDate)
-        try container.encode(isCompleted, forKey: .isCompleted)
-    }
-}
-
-extension Task: Decodable {
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: Task.CodingKeys.self)
-        self.id = try container.decode(String.self, forKey: .id)
-        self.title = try container.decode(String.self, forKey: .title)
-        self.dueDate = try container.decodeIfPresent(Date.self, forKey: .dueDate)
-        self.isCompleted = try container.decode(Bool.self, forKey: .isCompleted)
-    }
-}
-
-extension Task {
-    static var createTable: SQL {
-        return """
-            CREATE TABLE IF NOT EXISTS tasks (
-                id TEXT NOT NULL,
-                title TEXT NOT NULL,
-                dueDate TEXT,
-                isCompleted INTEGER NOT NULL
-            );
-            """
-    }
-
-    static var upsert: SQL {
-        return "INSERT OR REPLACE INTO tasks VALUES (:id, :title, :dueDate, :isCompleted);"
-    }
-
-    static var fetchAll: SQL {
-        return "SELECT id, title, dueDate, isCompleted FROM tasks;"
-    }
-
-    static var fetchByKey: SQL {
-        return "SELECT id, title, dueDate, isCompleted FROM tasks WHERE isCompleted=:isCompleted;"
-    }
-}
-
 extension ScheduledTest {
     static var createScheduledTestTable: SQL {
         return """
