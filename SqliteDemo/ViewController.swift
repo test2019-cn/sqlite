@@ -221,6 +221,7 @@ extension ViewController: NSTableViewDelegate {
             cellView.textField?.stringValue = content[row].lastModifiedAt ?? ""
             return cellView
         }
+
         return nil
     }
 }
