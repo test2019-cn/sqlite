@@ -7,40 +7,16 @@
 //
 
 import Cocoa
-import SQLite
 
-struct Country {
-    let name: String
-    enum CodingKeys: String, CodingKey {
-        case name
-    }
-}
-
-extension Country: Encodable {
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: Country.CodingKeys.self)
-        try container.encode(name, forKey: .name)
-    }
-}
-
-extension Country: Decodable {
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: Country.CodingKeys.self)
-        self.name = try container.decode(String.self, forKey: .name)
-    }
-}
 
 struct Task: Equatable {
-    static func == (lhs: Task, rhs: Task) -> Bool {
-        return lhs.title.name == rhs.title.name
-    }
-    
-
-    let title: Country
+    let id: String
+    let title: String
     let dueDate: Date?
     let isCompleted: Bool
 
     private enum CodingKeys: String, CodingKey {
+        case id
         case title
         case dueDate
         case isCompleted
@@ -50,6 +26,7 @@ struct Task: Equatable {
 extension Task: Encodable {
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: Task.CodingKeys.self)
+        try container.encode(id, forKey: .id)
         try container.encode(title, forKey: .title)
         try container.encode(dueDate, forKey: .dueDate)
         try container.encode(isCompleted, forKey: .isCompleted)
@@ -59,7 +36,8 @@ extension Task: Encodable {
 extension Task: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: Task.CodingKeys.self)
-        self.title = try container.decode(Country.self, forKey: .title)
+        self.id = try container.decode(String.self, forKey: .id)
+        self.title = try container.decode(String.self, forKey: .title)
         self.dueDate = try container.decodeIfPresent(Date.self, forKey: .dueDate)
         self.isCompleted = try container.decode(Bool.self, forKey: .isCompleted)
     }
@@ -69,7 +47,8 @@ extension Task {
     static var createTable: SQL {
         return """
             CREATE TABLE IF NOT EXISTS tasks (
-                title TEXT PRIMARY KEY,
+                id TEXT NOT NULL,
+                title TEXT NOT NULL,
                 dueDate TEXT,
                 isCompleted INTEGER NOT NULL
             );
@@ -77,15 +56,15 @@ extension Task {
     }
 
     static var upsert: SQL {
-        return "INSERT OR REPLACE INTO tasks VALUES (:title, :dueDate, :isCompleted);"
+        return "INSERT OR REPLACE INTO tasks VALUES (:id, :title, :dueDate, :isCompleted);"
     }
 
     static var fetchAll: SQL {
-        return "SELECT title, dueDate, isCompleted FROM tasks;"
+        return "SELECT id, title, dueDate, isCompleted FROM tasks;"
     }
 
-    static var fetchByID: SQL {
-        return "SELECT title, dueDate, isCompleted FROM tasks WHERE id=:id;"
+    static var fetchByKey: SQL {
+        return "SELECT id, title, dueDate, isCompleted FROM tasks WHERE isCompleted=:isCompleted;"
     }
 }
 
@@ -108,33 +87,39 @@ class ViewController: NSViewController {
             try FileManager.default.createDirectory(
                 atPath: path, withIntermediateDirectories: true, attributes: nil
             )
-            let database = try! SQLite.Database(path: "\(path)/test.sqlite")
-            try database.execute(raw: Task.createTable)
-
-            // MARK: JSON Encoder and Decoder
-
-            let tomorrow = Date(timeIntervalSinceNow: 86400)
-            let country = Country(name: "Japan")
-
-            let tomorrow2 = Date(timeIntervalSinceNow: 86400)
-            let country2 = Country(name: "London")
-
-            var tasks = [Task(title: country, dueDate: tomorrow, isCompleted: false), Task(title: country2, dueDate: tomorrow2, isCompleted: true)]
-
-            // wrap these calls in do-catch blocks in real apps
-            let json = try! JSONEncoder().encode(tasks)
-            let taskFromJSON = try! JSONDecoder().decode([Task].self, from: json)
-
+            let database = try! SQLite.Database(path: "\(path)/database.sqlite")
             let sqliteEncoder = SQLite.Encoder(database)
             let sqliteDecoder = SQLite.Decoder(database)
-////
-////            // wrap these calls in do-catch blocks in real apps
-////            try! sqliteEncoder.encode(tasks, using: Task.upsert)
-            // wrap these calls in do-catch blocks in real apps
-            try! sqliteEncoder.encode(tasks, using: Task.upsert)
-            let allTasks = try! sqliteDecoder.decode(Array<Task>.self, using: Task.fetchAll)
-            print(allTasks)
+            
+            //create table
+            try database.execute(raw: Task.createTable)
 
+
+            //Insert
+
+//            let tomorrow = Date(timeIntervalSinceNow: 86400)
+//
+//            var tasks = [Task(id: UUID().uuidString, title: "Buy apple", dueDate: tomorrow, isCompleted: true), Task(id: UUID().uuidString, title: "Buy milk", dueDate: tomorrow, isCompleted: false)]
+//            try! sqliteEncoder.encode(tasks, using: Task.upsert)
+
+            //Delete Table
+//            try database.execute(raw: Task.deleteTable)
+            
+            //Delete Row
+//            let component = Country(name: "Japan")
+//            let encoded = try JSONEncoder().encode(component)
+//            let json = String(data: encoded, encoding: .utf8)!
+//            try database.write(Task.deleteRow, arguments: ["title": .text(json)])
+//            let json = try! JSONEncoder().encode(tasks)
+//            let taskFromJSON = try! JSONDecoder().decode([Task].self, from: json)
+            
+            //Fetch all
+//            let allTasks = try sqliteDecoder.decode(Array<Task>.self, using: Task.fetchAll)
+//            print(allTasks)
+            
+            //Filter
+//            let taskFromSQLite = try! sqliteDecoder.decode([Task].self, using: Task.fetchByKey, arguments: ["isCompleted": .integer(0)])
+//            print(taskFromSQLite)
         } catch {
             print(error)
         }

@@ -4,12 +4,14 @@ import SQLite3
 extension SQLite {
     public final class Database {
 
-        public var hasOpenTransactions: Bool { return _transactionCount != 0 }
-        fileprivate var _transactionCount = 0
+        var hasOpenTransactions: Bool { return _transactionCount != 0 }
 
-        fileprivate let _connection: OpaquePointer
-        fileprivate let _path: String
-        fileprivate var _isOpen: Bool
+        private var _transactionCount = 0
+        private var _connection: OpaquePointer?
+        private let _path: String
+        private var _isOpen: Bool
+
+        var connection: OpaquePointer { return _connection! }
 
         fileprivate var _cachedStatements = Dictionary<String, OpaquePointer>()
 
@@ -27,10 +29,26 @@ extension SQLite {
             guard _isOpen else { return }
             _isOpen = false
             _cachedStatements.values.forEach { sqlite3_finalize($0) }
-            SQLite.Database.close(_connection)
+            sqlite3_close_v2(_connection)
+        }
+        /// The last rowid inserted into the database via this connection.
+        var lastInsertRowid: Int64 {
+            return sqlite3_last_insert_rowid(_connection)
         }
 
-        public func inTransaction(_ block: () throws -> Void) throws -> Bool {
+        /// The last number of changes (inserts, updates, or deletes) made to the
+        /// database via this connection.
+        var changes: Int {
+            return Int(sqlite3_changes(_connection))
+        }
+
+        /// The total number of changes (inserts, updates, or deletes) made to the
+        /// database via this connection.
+        var totalChanges: Int {
+            return Int(sqlite3_total_changes(_connection))
+        }
+
+        func inTransaction(_ block: () throws -> Void) throws -> Bool {
             _transactionCount += 1
             defer { _transactionCount -= 1 }
             
@@ -84,7 +102,7 @@ extension SQLite {
 
 extension SQLite.Database: Equatable {
     public static func == (lhs: SQLite.Database, rhs: SQLite.Database) -> Bool {
-        return lhs._connection == rhs._connection
+        return lhs.connection == rhs.connection
     }
 }
 
@@ -235,10 +253,6 @@ extension SQLite.Database {
         guard let connection = connection else { return }
         let result = sqlite3_close_v2(connection)
         if result != SQLITE_OK {
-            // We don't actually throw here, because the `sqlite3_close_v2()` will
-            // clean up the SQLite database connection when the transactions that
-            // were preventing the close are finalized.
-            // https://sqlite.org/c3ref/close.html
             let error = SQLite.Error.onClose(result)
             assertionFailure(error.description)
         }

@@ -42,58 +42,58 @@ public struct ScheduledTest: Codable {
         testConfiguration, histories = "diagnosis.history"
     }
 
-    var expectedTime: Double? {
-        return cases?.compactMap { $0.expectedTime?.toHours() }.reduce(0, +)
-    }
-
-    var completedExpectedTime: Double? {
-        return cases?.compactMap({ (scheduledTestCase) -> Double in
-            guard let status = scheduledTestCase.status,
-                let hour = scheduledTestCase.expectedTime?.toHours() else {
-                    return 0.0
-            }
-            return CaseStatus.completedStatus.contains(status) ? hour : 0.0
-            }).reduce(0, +)
-    }
-
-    var completedActualTime: Double? {
-        return cases?.compactMap({ (scheduledTestCase) -> Double in
-            guard let status = scheduledTestCase.status,
-                let hour = scheduledTestCase.actualTime?.toHours() else {
-                    return 0.0
-            }
-            return CaseStatus.completedStatus.contains(status) ? hour : 0.0
-            }).reduce(0, +)
-    }
-
-    var completedPercentage: Double? {
-        guard let completedTime = completedExpectedTime, let expectedTime = expectedTime else {
-            return nil
-        }
-        if expectedTime.isZero {
-            return 0.0
-        }
-        return completedTime / expectedTime
-    }
-
-    var remainingHours: Double? {
-        return cases?.compactMap({ (scheduledTestCase) -> Double in
-            guard let status = scheduledTestCase.status,
-                let hour = scheduledTestCase.expectedTime?.toHours() else {
-                    return 0.0
-            }
-            return CaseStatus.noValueStatus.contains(status) ? hour : 0.0
-            }).reduce(0, +)
-    }
-
-    var readableVersion: String? {
-        guard let nameComponents = component?.name?.components(separatedBy: "-"),
-            nameComponents.count > 1 else {
-                return component?.version
-        }
-        if Component.asiaLanguages.contains(component?.version ?? "") {
-            return component?.version
-        }
-        return nameComponents.last?.trimmingCharacters(in: .whitespaces)
-    }
+//    var expectedTime: Double? {
+//        return cases?.compactMap { $0.expectedTime?.toHours() }.reduce(0, +)
+//    }
+//
+//    var completedExpectedTime: Double? {
+//        return cases?.compactMap({ (scheduledTestCase) -> Double in
+//            guard let status = scheduledTestCase.status,
+//                let hour = scheduledTestCase.expectedTime?.toHours() else {
+//                    return 0.0
+//            }
+//            return CaseStatus.completedStatus.contains(status) ? hour : 0.0
+//            }).reduce(0, +)
+//    }
+//
+//    var completedActualTime: Double? {
+//        return cases?.compactMap({ (scheduledTestCase) -> Double in
+//            guard let status = scheduledTestCase.status,
+//                let hour = scheduledTestCase.actualTime?.toHours() else {
+//                    return 0.0
+//            }
+//            return CaseStatus.completedStatus.contains(status) ? hour : 0.0
+//            }).reduce(0, +)
+//    }
+//
+//    var completedPercentage: Double? {
+//        guard let completedTime = completedExpectedTime, let expectedTime = expectedTime else {
+//            return nil
+//        }
+//        if expectedTime.isZero {
+//            return 0.0
+//        }
+//        return completedTime / expectedTime
+//    }
+//
+//    var remainingHours: Double? {
+//        return cases?.compactMap({ (scheduledTestCase) -> Double in
+//            guard let status = scheduledTestCase.status,
+//                let hour = scheduledTestCase.expectedTime?.toHours() else {
+//                    return 0.0
+//            }
+//            return CaseStatus.noValueStatus.contains(status) ? hour : 0.0
+//            }).reduce(0, +)
+//    }
+//
+//    var readableVersion: String? {
+//        guard let nameComponents = component?.name?.components(separatedBy: "-"),
+//            nameComponents.count > 1 else {
+//                return component?.version
+//        }
+//        if Component.asiaLanguages.contains(component?.version ?? "") {
+//            return component?.version
+//        }
+//        return nameComponents.last?.trimmingCharacters(in: .whitespaces)
+//    }
 }

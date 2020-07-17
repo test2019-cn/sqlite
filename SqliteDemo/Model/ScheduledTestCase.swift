@@ -68,14 +68,14 @@ public struct ScheduledTestCase: Codable {
     var relatedProblems: [RelatedProblem]?
     var histories: [History]?
 
-    var readableVersion: String? {
-        guard let nameComponents = component?.name?.components(separatedBy: "-"),
-            nameComponents.count > 1 else {
-                return component?.version
-        }
-        if Component.asiaLanguages.contains(component?.version ?? "") {
-            return component?.version
-        }
-        return nameComponents.last?.trimmingCharacters(in: .whitespaces)
-    }
+//    var readableVersion: String? {
+//        guard let nameComponents = component?.name?.components(separatedBy: "-"),
+//            nameComponents.count > 1 else {
+//                return component?.version
+//        }
+//        if Component.asiaLanguages.contains(component?.version ?? "") {
+//            return component?.version
+//        }
+//        return nameComponents.last?.trimmingCharacters(in: .whitespaces)
+//    }
 }

@@ -43,14 +43,14 @@ extension SQLite {
             self.close()
         }
 
-        public func close() {
+        func close() {
             guard _isOpen else { return }
             _isOpen = false
             _cachedStatements.values.forEach { sqlite3_finalize($0) }
             SQLite.Database.close(_connection)
         }
 
-        public func inTransaction(_ block: () throws -> Void) throws -> Bool {
+        func inTransaction(_ block: () throws -> Void) throws -> Bool {
             _transactionCount += 1
             defer { _transactionCount -= 1 }
             

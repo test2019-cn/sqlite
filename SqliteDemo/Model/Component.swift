@@ -12,43 +12,31 @@ protocol Readable {
     var readableVersion: String { get }
 }
 
-public struct Component: Codable, Hashable, Comparable, Readable {
+public struct Component {
 
     let id: Int
     let version: String?
     let name: String?
-
-    static let asiaLanguages = ["CH", "CT", "HK", "ID", "KH", "MY", "TA", "TH", "VN", "Asia"]
-    static let otherComponentVersion = "Other"
-    static let unknownComponentVersion = "Unknown"
-
-    var readableVersion: String {
-        var version: String?
-        if name?.contains("-") ?? false && !Component.asiaLanguages.contains(self.version ?? "") {
-            version = name?.components(separatedBy: "-").last?.trimmingCharacters(in: .whitespaces)
-        } else {
-            version = self.version
-        }
-        if let version = version {
-            return Component.asiaLanguages.contains(version) ? version : Component.otherComponentVersion
-        } else {
-            return Component.unknownComponentVersion
-        }
+    
+    enum CodingKeys: String, CodingKey {
+        case id, version, name
     }
+}
 
-    public static func < (lhs: Component, rhs: Component) -> Bool {
-        if lhs.readableVersion.count != rhs.readableVersion.count {
-            return lhs.readableVersion.count < rhs.readableVersion.count
-        } else {
-            return lhs.readableVersion < rhs.readableVersion
-        }
+extension Component: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: Component.CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(version, forKey: .version)
+        try container.encode(name, forKey: .name)
     }
+}
 
-    public static func == (lhs: Component, rhs: Component) -> Bool {
-        return lhs.readableVersion == rhs.readableVersion
-    }
-
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(readableVersion)
-    }
+extension Component: Decodable {
+    public init(from decoder: Decoder) throws {
+          let container = try decoder.container(keyedBy: Component.CodingKeys.self)
+          self.id = try container.decode(Int.self, forKey: .id)
+          self.version = try container.decode(String.self, forKey: .version)
+          self.name = try container.decodeIfPresent(String.self, forKey: .name)
+      }
 }
