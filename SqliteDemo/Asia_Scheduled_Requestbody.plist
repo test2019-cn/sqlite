@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lastModifiedAt</key>
+	<dict>
+		<key>gt</key>
+		<string>lastModifiedAt</string>
+	</dict>
+	<key>component</key>
+	<array>
+		<dict>
+			<key>version</key>
+			<string>CH</string>
+		</dict>
+		<dict>
+			<key>version</key>
+			<string>KH</string>
+		</dict>
+		<dict>
+			<key>version</key>
+			<string>TA</string>
+		</dict>
+		<dict>
+			<key>version</key>
+			<string>HK</string>
+		</dict>
+		<dict>
+			<key>version</key>
+			<string>CT</string>
+		</dict>
+		<dict>
+			<key>version</key>
+			<string>TH</string>
+		</dict>
+		<dict>
+			<key>version</key>
+			<string>ID</string>
+		</dict>
+		<dict>
+			<key>version</key>
+			<string>MY</string>
+		</dict>
+		<dict>
+			<key>version</key>
+			<string>VN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-CH</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-KH</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-TA</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-HK</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-CT</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-ID</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-MY</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-TH</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-VN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization-HW-CH</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization HW-KH</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization HW-TA</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization HW-HK</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization HW-ID</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization HW-MY</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization HW-TH</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>PEP Localization HW-VN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - id_ID</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - ko_KR</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - ms_MY</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - th_TH</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - vi_VN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - zh_CN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - zh_HK</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - yue_CN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pepper Localization - zh_TW</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - id_ID</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - ko_KR</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - ms_MY</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - th_TH</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - vi_VN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - zh_CN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - zh_HK</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - yue_CN</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - zh_TW</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Siri Languages - en_SG</string>
+		</dict>
+	</array>
+</dict>
+</plist>

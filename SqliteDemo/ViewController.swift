@@ -68,39 +68,122 @@ extension Task {
     }
 }
 
+extension ScheduledTest {
+    static var createScheduledTestTable: SQL {
+        return """
+        CREATE TABLE IF NOT EXISTS ScheduledTest (
+        scheduledID INTEGER PRIMARY KEY,
+        suiteID INTEGER,
+        status TEXT,
+        suiteTitle TEXT,
+        currentTester INTEGER,
+        component INTEGER,
+        createdAt DATETIME,
+        lastModifiedAt DATETIME,
+        scheduledStartDate TEXT,
+        scheduledEndDate TEXT,
+        cases TEXT,
+        relatedProblems TEXT,
+        diagnosis_history TEXT,
+        testConfiguration TEXT,
+        FOREIGN KEY (currentTester) REFERENCES Person(dsid),
+        FOREIGN KEY (component) REFERENCES Component(id),
+        FOREIGN KEY (cases) REFERENCES ScheduledTestCase(caseID),
+        FOREIGN KEY (relatedProblems) REFERENCES RelateProblem(id)
+        )
+        """
+    }
+    
+    static var upsert: SQL {
+        return """
+        INSERT OR REPLACE INTO ScheduledTest VALUES (:scheduledID, :suiteID, :status, :suiteTitle,
+        :currentTester, :component, :createdAt, :lastModifiedAt, :scheduledStartDate, :scheduledEndDate,
+        :cases, :relatedProblems, :diagnosis_history, :testConfiguration
+        );
+        """
+    }
+
+}
+
 class ViewController: NSViewController {
+
+    let service = NetworkManager()
+    var dbPath: String = ""
+
+    @IBOutlet weak var progressIndicator: NSProgressIndicator!
+    @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var messageLabel: NSTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let path = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first! + "/" + Bundle.main.bundleIdentifier!
+        try! FileManager.default.createDirectory(
+            atPath: path, withIntermediateDirectories: true, attributes: nil
+        )
+        self.dbPath = "\(path)/database.sqlite"
+    }
+
+    @IBAction func createDatabase(_ sender: NSButton) {
         createDatabase()
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
+    @IBAction func loadData(_ sender: NSButton) {
+        fetchDataFromRadarAPI()
+    }
+
+    @IBAction func insertData(_ sender: NSButton) {
+        insert()
+    }
+
+    func fetchDataFromRadarAPI() {
+        progressIndicator.isHidden = false
+        progressIndicator.startAnimation(nil)
+        self.messageLabel.stringValue = ""
+
+        service.requestScheduledTestIDs(since: -1)
+        service.requestScheduledTestIDsCompletion = { [weak self] (ids: [Int]) in
+            self?.service.fetchScheduledTest(with: ids)
+        }
+        
+        service.requestScheduledTestCompletion = { [weak self] (scheduledTests: [ScheduledTest]) in
+            DispatchQueue.main.async {
+                self?.progressIndicator.isHidden = true
+                self?.progressIndicator.stopAnimation(nil)
+                self?.messageLabel.stringValue = "count: \(String(describing: self?.service.scheduledTests.count))"
+            }
         }
     }
     
+    func insert() {
+        if service.scheduledTests.isEmpty { return }
+        do {
+            let database = try! SQLite.Database(path: "\(dbPath)")
+            try database.execute(raw: ScheduledTest.createScheduledTestTable)
+            let sqliteEncoder = SQLite.Encoder(database)
+            try sqliteEncoder.encode(service.scheduledTests, using: ScheduledTest.upsert)
+            self.messageLabel.stringValue = "update: \(database.totalChanges)"
+        } catch {
+            print(error)
+        }
+    }
+
     func createDatabase() {
         do {
-            let path = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first! + "/" + Bundle.main.bundleIdentifier!
-            try FileManager.default.createDirectory(
-                atPath: path, withIntermediateDirectories: true, attributes: nil
-            )
-            let database = try! SQLite.Database(path: "\(path)/database.sqlite")
-            let sqliteEncoder = SQLite.Encoder(database)
-            let sqliteDecoder = SQLite.Decoder(database)
-            
-            //create table
-            try database.execute(raw: Task.createTable)
+            if FileManager.default.fileExists(atPath: dbPath) {
+                self.messageLabel.stringValue = "databse already exists."
+            } else {
+                let database = try! SQLite.Database(path: "\(dbPath)")
+                self.messageLabel.stringValue = "Database created. \(dbPath)"
+            }
 
-
+                            
+            //                let sqliteDecoder = SQLite.Decoder(database)
             //Insert
 
-            let tomorrow = Date(timeIntervalSinceNow: 86400)
-
-            var tasks = [Task(id: UUID().uuidString, title: "Buy apple", dueDate: tomorrow, isCompleted: true), Task(id: UUID().uuidString, title: "Buy milk", dueDate: tomorrow, isCompleted: false)]
-            try! sqliteEncoder.encode(tasks, using: Task.upsert)
+//            let tomorrow = Date(timeIntervalSinceNow: 86400)
+//
+//            var tasks = [Task(id: UUID().uuidString, title: "Buy apple", dueDate: tomorrow, isCompleted: true), Task(id: UUID().uuidString, title: "Buy milk", dueDate: tomorrow, isCompleted: false)]
+//            try! sqliteEncoder.encode(tasks, using: Task.upsert)
 
             //Delete Table
 //            try database.execute(raw: Task.deleteTable)
