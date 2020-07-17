@@ -103,12 +103,29 @@ extension ScheduledTest {
         """
     }
 
+    static var fetchAll: SQL {
+        return "SELECT * FROM ScheduledTest;"
+    }
+
+    static var updateRow: SQL {
+        return "UPDATE SCHEduledTest SET suiteID=:suiteID WHERE scheduledID=:scheduledID"
+    }
+    
+    static var deleteRow: SQL {
+        return "DELETE FROM SCHEduledTest WHERE suiteID=:suiteID;"
+    }
+
 }
 
 class ViewController: NSViewController {
 
     let service = NetworkManager()
     var dbPath: String = ""
+    var content: [ScheduledTest] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     @IBOutlet weak var progressIndicator: NSProgressIndicator!
     @IBOutlet weak var tableView: NSTableView!
@@ -135,6 +152,14 @@ class ViewController: NSViewController {
         insert()
     }
 
+    @IBAction func updateRow(_ sender: NSButton) {
+        update()
+    }
+
+    @IBAction func deleteRow(_ sender: NSButton) {
+        deleteRow()
+    }
+
     func fetchDataFromRadarAPI() {
         progressIndicator.isHidden = false
         progressIndicator.startAnimation(nil)
@@ -154,60 +179,109 @@ class ViewController: NSViewController {
         }
     }
     
-    func insert() {
-        if service.scheduledTests.isEmpty { return }
+    @IBAction func reloadData(_ sender: NSButton) {
         do {
             let database = try! SQLite.Database(path: "\(dbPath)")
-            try database.execute(raw: ScheduledTest.createScheduledTestTable)
-            let sqliteEncoder = SQLite.Encoder(database)
-            try sqliteEncoder.encode(service.scheduledTests, using: ScheduledTest.upsert)
+            let sqliteDecoder = SQLite.Decoder(database)
+            content = try sqliteDecoder.decode([ScheduledTest].self, using: ScheduledTest.fetchAll)
+            self.messageLabel.stringValue = "Rows: \(content.count)"
+        } catch {
+            print(error)
+        }
+    }
+    
+    func update() {
+        do {
+            let database = try! SQLite.Database(path: "\(dbPath)")
+            try database.execute(raw: ScheduledTest.updateRow)
+            try database.write(ScheduledTest.updateRow, arguments: [
+                "suiteID": .integer(100),
+                "scheduledID": .integer(1501001)
+                ]
+            )
             self.messageLabel.stringValue = "update: \(database.totalChanges)"
         } catch {
             print(error)
         }
     }
 
-    func createDatabase() {
+    func insert() {
         do {
-            if FileManager.default.fileExists(atPath: dbPath) {
-                self.messageLabel.stringValue = "databse already exists."
-            } else {
-                let database = try! SQLite.Database(path: "\(dbPath)")
-                self.messageLabel.stringValue = "Database created. \(dbPath)"
-            }
-
-                            
-            //                let sqliteDecoder = SQLite.Decoder(database)
-            //Insert
-
-//            let tomorrow = Date(timeIntervalSinceNow: 86400)
-//
-//            var tasks = [Task(id: UUID().uuidString, title: "Buy apple", dueDate: tomorrow, isCompleted: true), Task(id: UUID().uuidString, title: "Buy milk", dueDate: tomorrow, isCompleted: false)]
-//            try! sqliteEncoder.encode(tasks, using: Task.upsert)
-
-            //Delete Table
-//            try database.execute(raw: Task.deleteTable)
+            let database = try! SQLite.Database(path: "\(dbPath)")
+            try database.execute(raw: ScheduledTest.createScheduledTestTable)
+            let sqliteEncoder = SQLite.Encoder(database)
+            try sqliteEncoder.encode(service.scheduledTests, using: ScheduledTest.upsert)
             
-            //Delete Row
-//            let component = Country(name: "Japan")
-//            let encoded = try JSONEncoder().encode(component)
-//            let json = String(data: encoded, encoding: .utf8)!
-//            try database.write(Task.deleteRow, arguments: ["title": .text(json)])
-//            let json = try! JSONEncoder().encode(tasks)
-//            let taskFromJSON = try! JSONDecoder().decode([Task].self, from: json)
-            
-            //Fetch all
-//            let allTasks = try sqliteDecoder.decode(Array<Task>.self, using: Task.fetchAll)
-//            print(allTasks)
-            
-            //Filter
-//            let taskFromSQLite = try! sqliteDecoder.decode([Task].self, using: Task.fetchByKey, arguments: ["isCompleted": .integer(0)])
-//            print(taskFromSQLite)
+            let sqliteDecoder = SQLite.Decoder(database)
+            content = try sqliteDecoder.decode(Array<ScheduledTest>.self, using: ScheduledTest.fetchAll)
+            self.messageLabel.stringValue = "Insert: \(database.totalChanges)"
         } catch {
             print(error)
         }
     }
 
+    func deleteRow() {
+        do {
+            let database = try! SQLite.Database(path: "\(dbPath)")
+            try database.write(ScheduledTest.deleteRow, arguments: [
+                "suiteID": .integer(1545560)
+                ]
+            )
+            self.messageLabel.stringValue = "Delete: \(database.totalChanges)"
+        } catch {
+            print(error)
+        }
+    }
 
+    func createDatabase() {
+        if FileManager.default.fileExists(atPath: dbPath) {
+            self.messageLabel.stringValue = "databse already exists."
+        } else {
+            do {
+                _ = try SQLite.Database(path: "\(dbPath)")
+                self.messageLabel.stringValue = "Database created. \(dbPath)"
+            } catch {
+                print(error)
+            }
+        }
+    }
+}
+
+extension ViewController: NSTableViewDataSource {
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return content.count
+    }
+}
+
+extension ViewController: NSTableViewDelegate {
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+  
+        if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "scheduledIDCol") {
+            guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "scheduledIDCell"), owner: self) as? NSTableCellView else { return nil }
+            cellView.textField?.integerValue = content[row].scheduledID
+            return cellView
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "suiteIDCol") {
+            guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "suiteIDCell"), owner: self) as? NSTableCellView else { return nil }
+            cellView.textField?.integerValue = content[row].testSuiteID ?? -1
+            return cellView
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "suiteTitleCol") {
+            guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "suiteTitleCell"), owner: self) as? NSTableCellView else { return nil }
+            cellView.textField?.stringValue = content[row].suiteTitle ?? ""
+            return cellView
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "componentCol") {
+            guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "componentCell"), owner: self) as? NSTableCellView else { return nil }
+            cellView.textField?.stringValue = content[row].component?.name ?? "xxx"
+            return cellView
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "languageCol") {
+            guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "languageCell"), owner: self) as? NSTableCellView else { return nil }
+            cellView.textField?.stringValue = content[row].component?.version ?? "xxx"
+            return cellView
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "lastModifiedAtCol") {
+            guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "lastModifiedAtCell"), owner: self) as? NSTableCellView else { return nil }
+            cellView.textField?.stringValue = content[row].lastModifiedAt ?? ""
+            return cellView
+        }
+        return nil
+    }
 }
 
