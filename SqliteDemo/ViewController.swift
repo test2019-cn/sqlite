@@ -97,10 +97,10 @@ class ViewController: NSViewController {
 
             //Insert
 
-//            let tomorrow = Date(timeIntervalSinceNow: 86400)
-//
-//            var tasks = [Task(id: UUID().uuidString, title: "Buy apple", dueDate: tomorrow, isCompleted: true), Task(id: UUID().uuidString, title: "Buy milk", dueDate: tomorrow, isCompleted: false)]
-//            try! sqliteEncoder.encode(tasks, using: Task.upsert)
+            let tomorrow = Date(timeIntervalSinceNow: 86400)
+
+            var tasks = [Task(id: UUID().uuidString, title: "Buy apple", dueDate: tomorrow, isCompleted: true), Task(id: UUID().uuidString, title: "Buy milk", dueDate: tomorrow, isCompleted: false)]
+            try! sqliteEncoder.encode(tasks, using: Task.upsert)
 
             //Delete Table
 //            try database.execute(raw: Task.deleteTable)
