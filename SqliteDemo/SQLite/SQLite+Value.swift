@@ -1,8 +1,8 @@
 import Foundation
 import SQLite3
 
-public typealias SQLiteArguments = Dictionary<String, SQLite.Value>
-public typealias SQLiteRow = Dictionary<String, SQLite.Value>
+typealias SQLiteArguments = Dictionary<String, SQLite.Value>
+typealias SQLiteRow = Dictionary<String, SQLite.Value>
 
 extension SQLite {
     public enum Value {
@@ -70,7 +70,7 @@ extension SQLite.Value {
 }
 
 extension SQLite.Value: Hashable {
-    public static func == (lhs: SQLite.Value, rhs: SQLite.Value) -> Bool {
+    static func == (lhs: SQLite.Value, rhs: SQLite.Value) -> Bool {
         switch (lhs, rhs) {
         case (.data(let left), .data(let right)):
             return left == right
@@ -87,7 +87,7 @@ extension SQLite.Value: Hashable {
         }
     }
 
-    public var hashValue: Int {
+    var hashValue: Int {
         switch self {
         case .data(let value):
             return value.hashValue

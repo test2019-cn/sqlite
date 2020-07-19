@@ -1,21 +1,32 @@
 import Foundation
 import SQLite3
 
-extension SQLite {
-    public final class Database {
 
-        var hasOpenTransactions: Bool { return _transactionCount != 0 }
+public typealias SQL = String
+let SQLITE_STATIC = unsafeBitCast(0, to: sqlite3_destructor_type.self)
+let SQLITE_TRANSIENT = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
 
+struct SQLite {
+    class Database {
+        //MARK: Instance variable
         private var _transactionCount = 0
         private var _connection: OpaquePointer?
         private let _path: String
         private var _isOpen: Bool
-
-        var connection: OpaquePointer { return _connection! }
-
-        fileprivate var _cachedStatements = Dictionary<String, OpaquePointer>()
-
-        public init(path: String) throws {
+        private var _cachedStatements = Dictionary<String, OpaquePointer>()
+        
+        var lastInsertRowid: Int64 {
+            return sqlite3_last_insert_rowid(_connection)
+        }
+        var changes: Int {
+            return Int(sqlite3_changes(_connection))
+        }
+        var totalChanges: Int {
+            return Int(sqlite3_total_changes(_connection))
+        }
+        
+        //MARK: Init
+        init(path: String) throws {
             _connection = try SQLite.Database.open(at: path)
             _isOpen = true
             _path = path
@@ -25,27 +36,11 @@ extension SQLite {
             self.close()
         }
 
-        public func close() {
+        func close() {
             guard _isOpen else { return }
             _isOpen = false
             _cachedStatements.values.forEach { sqlite3_finalize($0) }
             sqlite3_close_v2(_connection)
-        }
-        /// The last rowid inserted into the database via this connection.
-        var lastInsertRowid: Int64 {
-            return sqlite3_last_insert_rowid(_connection)
-        }
-
-        /// The last number of changes (inserts, updates, or deletes) made to the
-        /// database via this connection.
-        var changes: Int {
-            return Int(sqlite3_changes(_connection))
-        }
-
-        /// The total number of changes (inserts, updates, or deletes) made to the
-        /// database via this connection.
-        var totalChanges: Int {
-            return Int(sqlite3_total_changes(_connection))
         }
 
         func inTransaction(_ block: () throws -> Void) throws -> Bool {
@@ -64,7 +59,7 @@ extension SQLite {
             }
         }
 
-        public func write(_ sql: SQL, arguments: SQLiteArguments) throws {
+        func write(_ sql: SQL, arguments: SQLiteArguments) throws {
             guard _isOpen else { assertionFailure("Database is closed"); return }
 
             let statement = try self.statement(for: sql)
@@ -82,14 +77,14 @@ extension SQLite {
             }
         }
 
-        public func read(_ sql: SQL, arguments: SQLiteArguments) throws -> Array<SQLiteRow> {
+        func read(_ sql: SQL, arguments: SQLiteArguments) throws -> Array<SQLiteRow> {
             guard _isOpen else { assertionFailure("Database is closed"); return [] }
             let statement = try self.statement(for: sql)
             return try _execute(sql, statement: statement, arguments: arguments)
         }
 
         @discardableResult
-        public func execute(raw sql: SQL) throws -> Array<SQLiteRow> {
+        func execute(raw sql: SQL) throws -> Array<SQLiteRow> {
             guard _isOpen else { assertionFailure("Database is closed"); return [] }
 
             let statement = try prepare(sql)
@@ -101,13 +96,13 @@ extension SQLite {
 }
 
 extension SQLite.Database: Equatable {
-    public static func == (lhs: SQLite.Database, rhs: SQLite.Database) -> Bool {
-        return lhs.connection == rhs.connection
-    }
+    static func == (lhs: SQLite.Database, rhs: SQLite.Database) -> Bool {
+    return lhs._connection == rhs._connection
+}
 }
 
 extension SQLite.Database {
-    fileprivate func _execute(_ sql: SQL, statement: OpaquePointer,
+    private func _execute(_ sql: SQL, statement: OpaquePointer,
                               arguments: SQLiteArguments) throws -> Array<SQLiteRow> {
         guard _isOpen else { assertionFailure("Database is closed"); return [] }
 
@@ -133,7 +128,7 @@ extension SQLite.Database {
         return output
     }
 
-    fileprivate func statement(for sql: SQL) throws -> OpaquePointer {
+    private func statement(for sql: SQL) throws -> OpaquePointer {
         if let cached = _cachedStatements[sql] {
             return cached
         } else {
@@ -143,7 +138,7 @@ extension SQLite.Database {
         }
     }
 
-    fileprivate func prepare(_ sql: SQL) throws -> OpaquePointer {
+    private func prepare(_ sql: SQL) throws -> OpaquePointer {
         var optionalStatement: OpaquePointer?
         let result = sqlite3_prepare_v2(_connection, sql, -1, &optionalStatement, nil)
         guard SQLITE_OK == result, let statement = optionalStatement else {
@@ -155,7 +150,7 @@ extension SQLite.Database {
         return statement
     }
 
-    fileprivate func bind(arguments: SQLiteArguments, to statement: OpaquePointer) throws {
+    private func bind(arguments: SQLiteArguments, to statement: OpaquePointer) throws {
         for (key, value) in arguments {
             let name = ":\(key)"
             let index = sqlite3_bind_parameter_index(statement, name)
@@ -164,7 +159,7 @@ extension SQLite.Database {
         }
     }
 
-    fileprivate func bind(value: SQLite.Value, to index: Int32, in statement: OpaquePointer) throws {
+    private func bind(value: SQLite.Value, to index: Int32, in statement: OpaquePointer) throws {
         let result: Int32
         switch value {
         case .data(let data):
@@ -186,7 +181,7 @@ extension SQLite.Database {
         }
     }
 
-    fileprivate func row(for statement: OpaquePointer) throws -> SQLiteRow {
+    private func row(for statement: OpaquePointer) throws -> SQLiteRow {
         let columnCount = sqlite3_column_count(statement)
         guard columnCount > 0 else { return [:] }
 
@@ -226,10 +221,9 @@ extension SQLite.Database {
     }
 }
 
-
 extension SQLite.Database {
     
-    fileprivate class func open(at path: String) throws -> OpaquePointer {
+    private class func open(at path: String) throws -> OpaquePointer {
         var optionalConnection: OpaquePointer?
         let result = sqlite3_open(path, &optionalConnection)
 
@@ -249,7 +243,7 @@ extension SQLite.Database {
         return connection
     }
 
-    fileprivate class func close(_ connection: OpaquePointer?) {
+    private class func close(_ connection: OpaquePointer?) {
         guard let connection = connection else { return }
         let result = sqlite3_close_v2(connection)
         if result != SQLITE_OK {

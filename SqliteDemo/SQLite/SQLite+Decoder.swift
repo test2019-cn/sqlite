@@ -1,7 +1,7 @@
 import Foundation
 
 extension SQLite {
-    public final class Decoder {
+    class Decoder {
         public enum Error: Swift.Error {
             case incorrectNumberOfResults(Int)
             case missingValueForKey(String)

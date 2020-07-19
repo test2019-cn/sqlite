@@ -1,0 +1,3564 @@
+[
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2012-12-12T12:00:00+0000",
+      "component":{
+         "name":"Loc:Proj:RAW Camera",
+         "id":514647,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T00:27:42+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":1501001,
+      "geography":"Hong Kong",
+      "title":"RAW Camera Update 4.03 [PackageData] Auto Update Testing Bacon12U1119 OTR",
+      "priority":5,
+      "suiteTitle":"RAW Camera Update 4.03 [PackageData] Auto Update Testing Bacon12U1119 OTR",
+      "scheduledStartDate":"2012-12-12T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-04-10T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:43:38+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":6856201,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][LocQA 5] Changes testing for Golden Core(20A251z from 20A236a)",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][LocQA 5] Changes testing for Golden Core(20A251z from 20A236a)",
+      "scheduledStartDate":"2020-04-03T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-05-06T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890735,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-18T11:11:17+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":6953931,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][Loc QA Sweep 1] MacBuddyX",
+      "priority":1,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] MacBuddyX",
+      "scheduledStartDate":"2020-04-28T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-06-05T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T08:12:42+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7092574,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Shared(20A285 from 20A274) - Part 2",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Shared(20A285 from 20A274) - Part 2",
+      "scheduledStartDate":"2020-05-27T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-06-12T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890711,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T08:36:08+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7159052,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Shared(20A294x from 20A285)",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Shared(20A294x from 20A285)",
+      "scheduledStartDate":"2020-06-10T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-06-12T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890732,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T08:34:31+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7159058,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Shared(20A294x from 20A285)",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Shared(20A294x from 20A285)",
+      "scheduledStartDate":"2020-06-10T12:00:00+0000",
+      "status":"Failed"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-06-16T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T04:17:36+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7163949,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Core(20A294x from 20A285)",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Core(20A294x from 20A285)",
+      "scheduledStartDate":"2020-06-11T12:00:00+0000",
+      "status":"Failed"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-06-16T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890732,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T08:52:26+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7163950,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Core(20A294x from 20A285)",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][LocQA 6] Changes testing for Golden Core(20A294x from 20A285)",
+      "scheduledStartDate":"2020-06-11T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-06-19T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T02:28:22+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7183826,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][AutoSpacing] Automator",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][AutoSpacing] Automator",
+      "scheduledStartDate":"2020-06-16T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-06-19T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T04:22:00+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7183827,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][AutoSpacing] Automator_executables",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][AutoSpacing] Automator_executables",
+      "scheduledStartDate":"2020-06-16T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-03T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T06:30:41+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7216098,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.16 SW][AutoSpacing] Calendar",
+      "priority":5,
+      "suiteTitle":"[macOS 10.16 SW][AutoSpacing] Calendar",
+      "scheduledStartDate":"2020-06-24T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890711,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T06:47:02+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241170,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Accessibility(UniversalAccessPref_executables)",
+      "priority":2,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Accessibility(UniversalAccessPref_executables)",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890732,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T08:42:34+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241177,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Accessibility(UniversalAccessPref_executables)",
+      "priority":2,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Accessibility(UniversalAccessPref_executables)",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T08:43:13+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241239,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - EnergySaverPref",
+      "priority":1,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - EnergySaverPref",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"Failed"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890732,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T08:51:00+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241243,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - EnergySaverPref",
+      "priority":1,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - EnergySaverPref",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T05:53:56+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241252,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Extensions",
+      "priority":1,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Extensions",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T05:58:42+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241656,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - NetworkPref",
+      "priority":1,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - NetworkPref",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T05:59:28+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241686,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - ScreenTime",
+      "priority":1,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - ScreenTime",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T06:14:14+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241699,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Notifications and NotificationCenter",
+      "priority":2,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Notifications and NotificationCenter",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T06:12:12+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241710,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Profiles",
+      "priority":2,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Profiles",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T06:05:18+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241725,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Sidecar",
+      "priority":2,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - Sidecar",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T06:05:32+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7241848,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - AppleID Pref - Family Sharing",
+      "priority":1,
+      "suiteTitle":"[macOS 11.0 SW][Loc QA Sweep 1] System Prefs - AppleID Pref - Family Sharing",
+      "scheduledStartDate":"2020-06-30T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-08T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890711,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T10:09:54+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7250305,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 1",
+      "scheduledStartDate":"2020-07-02T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-08T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890766,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T10:38:51+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7250308,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 1",
+      "scheduledStartDate":"2020-07-02T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-08T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890735,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-18T10:17:57+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7250313,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 1",
+      "scheduledStartDate":"2020-07-02T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-08T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890711,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T03:14:00+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7250314,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Core(20A309 from 20A294x) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Core(20A309 from 20A294x) - Part 1",
+      "scheduledStartDate":"2020-07-02T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-08T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890735,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-17T09:18:19+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7250322,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Core(20A309 from 20A294x) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Core(20A309 from 20A294x) - Part 1",
+      "scheduledStartDate":"2020-07-02T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand SW iOS",
+         "id":950928,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T09:14:10+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7265974,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"Failed"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand SW iOS",
+         "id":950930,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-17T08:52:38+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7265975,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"Failed"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand SW iOS",
+         "id":950929,
+         "version":"TA"
+      },
+      "lastModifiedAt":"2020-07-17T02:53:25+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7265976,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand SW iOS",
+         "id":950932,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T06:49:03+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7265977,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand SW iOS",
+         "id":950935,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-17T06:08:47+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7265978,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand SW iOS",
+         "id":950933,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T09:15:46+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7265979,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand SW iOS",
+         "id":950934,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T09:43:32+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7265980,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand SW iOS",
+         "id":950931,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T11:12:32+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7265981,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand 2.4 Jenga SW][LocQA 1] New/changes & Quick Look",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-10T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890711,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T03:06:25+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7268205,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 2",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 2",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-10T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890735,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-17T10:13:37+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7268213,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 2",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 6] Changes testing for Golden Share(20A309 from 20A294x) - Part 2",
+      "scheduledStartDate":"2020-07-07T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Alvin",
+         "lastName":"Jim",
+         "dsid":214414,
+         "type":"Employee",
+         "email":"alvinjim@apple.com"
+      },
+      "scheduledEndDate":"2020-07-16T12:00:00+0000",
+      "component":{
+         "name":"Loc:GarageBand Content iOS",
+         "id":961729,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T03:01:44+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7285651,
+      "geography":"Hong Kong",
+      "title":"[iOS GarageBand Content 2020-2 SW][LocQA 1] Glossaries Check",
+      "priority":5,
+      "suiteTitle":"[iOS GarageBand Content 2020-2 SW][LocQA 1] Glossaries Check",
+      "scheduledStartDate":"2020-07-13T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:Classroom SW macOS",
+         "id":950776,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T07:11:51+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7286240,
+      "geography":"Hong Kong",
+      "title":"[Classroom 2.3 SW][LC1]",
+      "priority":5,
+      "suiteTitle":"[Classroom 2.3 SW][LC1]",
+      "scheduledStartDate":"2020-07-13T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:Classroom SW macOS",
+         "id":950778,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-17T03:13:23+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7286241,
+      "geography":"Hong Kong",
+      "title":"[Classroom 2.3 SW][LC1]",
+      "priority":5,
+      "suiteTitle":"[Classroom 2.3 SW][LC1]",
+      "scheduledStartDate":"2020-07-13T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:Classroom SW macOS",
+         "id":964184,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T07:30:25+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7286243,
+      "geography":"Hong Kong",
+      "title":"[Classroom 2.3 SW][LC1]",
+      "priority":5,
+      "suiteTitle":"[Classroom 2.3 SW][LC1]",
+      "scheduledStartDate":"2020-07-13T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:Classroom SW macOS",
+         "id":950780,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T06:41:18+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7286246,
+      "geography":"Hong Kong",
+      "title":"[Classroom 2.3 SW][LC1]",
+      "priority":5,
+      "suiteTitle":"[Classroom 2.3 SW][LC1]",
+      "scheduledStartDate":"2020-07-13T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:Classroom SW macOS",
+         "id":950781,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T03:44:01+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7286247,
+      "geography":"Hong Kong",
+      "title":"[Classroom 2.3 SW][LC1]",
+      "priority":5,
+      "suiteTitle":"[Classroom 2.3 SW][LC1]",
+      "scheduledStartDate":"2020-07-13T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:Classroom SW macOS",
+         "id":950782,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-17T07:13:29+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7286248,
+      "geography":"Hong Kong",
+      "title":"[Classroom 2.3 SW][LC1]",
+      "priority":5,
+      "suiteTitle":"[Classroom 2.3 SW][LC1]",
+      "scheduledStartDate":"2020-07-13T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890766,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T04:48:46+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7287163,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][Loc Functional QA] On-Device Dictionaries for Cantonese (Traditional)",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][Loc Functional QA] On-Device Dictionaries for Cantonese (Traditional)",
+      "scheduledStartDate":"2020-07-13T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Classroom SW iOS",
+         "id":961905,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T11:33:39+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7290747,
+      "geography":"Hong Kong",
+      "title":"[Classroom 3.3 SW][LC1]",
+      "priority":5,
+      "suiteTitle":"[Classroom 3.3 SW][LC1]",
+      "scheduledStartDate":"2020-07-14T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Classroom SW iOS",
+         "id":961907,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T08:38:06+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7290750,
+      "geography":"Hong Kong",
+      "title":"[Classroom 3.3 SW][LC1]",
+      "priority":5,
+      "suiteTitle":"[Classroom 3.3 SW][LC1]",
+      "scheduledStartDate":"2020-07-14T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:THT",
+         "id":1039164,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T08:55:30+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7294664,
+      "geography":"Hong Kong",
+      "title":"[Texas HoldEm 3.0][LocQA 1] macOS - Based on HoldEm1A240",
+      "priority":5,
+      "suiteTitle":"[Texas HoldEm 3.0][LocQA 1] macOS - Based on HoldEm1A240",
+      "scheduledStartDate":"2020-07-15T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:THT",
+         "id":1039167,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-17T09:59:29+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7294665,
+      "geography":"Hong Kong",
+      "title":"[Texas HoldEm 3.0][LocQA 1] macOS - Based on HoldEm1A240",
+      "priority":5,
+      "suiteTitle":"[Texas HoldEm 3.0][LocQA 1] macOS - Based on HoldEm1A240",
+      "scheduledStartDate":"2020-07-15T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:THT",
+         "id":1039169,
+         "version":"TA"
+      },
+      "lastModifiedAt":"2020-07-17T09:28:48+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7294666,
+      "geography":"Hong Kong",
+      "title":"[Texas HoldEm 3.0][LocQA 1] macOS - Based on HoldEm1A240",
+      "priority":5,
+      "suiteTitle":"[Texas HoldEm 3.0][LocQA 1] macOS - Based on HoldEm1A240",
+      "scheduledStartDate":"2020-07-15T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:THT",
+         "id":1039165,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T09:01:25+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7294673,
+      "geography":"Hong Kong",
+      "title":"[Texas HoldEm 3.0][LocQA 1] macOS - Based on HoldEm1A240",
+      "priority":5,
+      "suiteTitle":"[Texas HoldEm 3.0][LocQA 1] macOS - Based on HoldEm1A240",
+      "scheduledStartDate":"2020-07-15T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890731,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-17T06:05:44+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7294942,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.15.6 CPU SW][macOSJazzGHW OTR] System QuickLook ] System Quic",
+      "priority":5,
+      "suiteTitle":"[macOS 10.15.6 CPU SW][macOSJazzGHW OTR] System QuickLook ] System Quic",
+      "scheduledStartDate":"2020-07-15T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Rachel",
+         "lastName":"Yu",
+         "dsid":217802184,
+         "type":"Employee",
+         "email":"rachel.yu@apple.com"
+      },
+      "scheduledEndDate":"2020-07-17T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T08:29:00+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7294946,
+      "geography":"Hong Kong",
+      "title":"[macOS 10.15.6 CPU SW][macOSJazzGHW OTR] System QuickLook ] System Quic",
+      "priority":5,
+      "suiteTitle":"[macOS 10.15.6 CPU SW][macOSJazzGHW OTR] System QuickLook ] System Quic",
+      "scheduledStartDate":"2020-07-15T12:00:00+0000",
+      "status":"Complete"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-27T12:00:00+0000",
+      "component":{
+         "name":"Loc:Move to iOS Android",
+         "id":1108001,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-18T12:00:48+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299355,
+      "geography":"Hong Kong",
+      "title":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "priority":5,
+      "suiteTitle":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-27T12:00:00+0000",
+      "component":{
+         "name":"Loc:Move to iOS Android",
+         "id":1108003,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-18T12:00:50+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299356,
+      "geography":"Hong Kong",
+      "title":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "priority":5,
+      "suiteTitle":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-27T12:00:00+0000",
+      "component":{
+         "name":"Loc:Move to iOS Android",
+         "id":1108000,
+         "version":"TA"
+      },
+      "lastModifiedAt":"2020-07-18T12:00:51+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299360,
+      "geography":"Hong Kong",
+      "title":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "priority":5,
+      "suiteTitle":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-27T12:00:00+0000",
+      "component":{
+         "name":"Loc:Move to iOS Android",
+         "id":1108004,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-18T12:00:52+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299361,
+      "geography":"Hong Kong",
+      "title":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "priority":5,
+      "suiteTitle":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-27T12:00:00+0000",
+      "component":{
+         "name":"Loc:Move to iOS Android",
+         "id":1108007,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-18T12:00:54+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299364,
+      "geography":"Hong Kong",
+      "title":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "priority":5,
+      "suiteTitle":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-27T12:00:00+0000",
+      "component":{
+         "name":"Loc:Move to iOS Android",
+         "id":1108002,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-18T12:00:55+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299365,
+      "geography":"Hong Kong",
+      "title":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "priority":5,
+      "suiteTitle":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-27T12:00:00+0000",
+      "component":{
+         "name":"Loc:Move to iOS Android",
+         "id":1108006,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-18T12:00:56+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299366,
+      "geography":"Hong Kong",
+      "title":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "priority":5,
+      "suiteTitle":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Connie",
+         "lastName":"Chen",
+         "dsid":2319644876,
+         "type":"Employee",
+         "email":"connie_chen@apple.com"
+      },
+      "scheduledEndDate":"2020-07-27T12:00:00+0000",
+      "component":{
+         "name":"Loc:Move to iOS Android",
+         "id":1108005,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-18T12:00:58+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299369,
+      "geography":"Hong Kong",
+      "title":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "priority":5,
+      "suiteTitle":"[DeckardAndroidStrings]: Loc: NeoNoir1A51: Move to iOS - LocQA 1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Clips SW",
+         "id":818918,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-18T02:55:40+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299652,
+      "geography":"Hong Kong",
+      "title":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "priority":5,
+      "suiteTitle":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Clips SW",
+         "id":818922,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-18T09:38:16+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299654,
+      "geography":"Hong Kong",
+      "title":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "priority":5,
+      "suiteTitle":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Clips SW",
+         "id":818924,
+         "version":"TA"
+      },
+      "lastModifiedAt":"2020-07-17T07:16:56+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299655,
+      "geography":"Hong Kong",
+      "title":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "priority":5,
+      "suiteTitle":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Clips SW",
+         "id":818919,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T07:17:24+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299656,
+      "geography":"Hong Kong",
+      "title":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "priority":5,
+      "suiteTitle":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Clips SW",
+         "id":818925,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T07:18:01+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299657,
+      "geography":"Hong Kong",
+      "title":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "priority":5,
+      "suiteTitle":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Clips SW",
+         "id":818920,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T07:18:30+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299658,
+      "geography":"Hong Kong",
+      "title":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "priority":5,
+      "suiteTitle":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Clips SW",
+         "id":818923,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T12:19:13+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299659,
+      "geography":"Hong Kong",
+      "title":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "priority":5,
+      "suiteTitle":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alex",
+         "lastName":"Wong",
+         "dsid":1221328448,
+         "type":"Employee",
+         "email":"wong_alex@apple.com"
+      },
+      "scheduledEndDate":"2020-07-20T12:00:00+0000",
+      "component":{
+         "name":"Loc:Clips SW",
+         "id":818926,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-17T07:19:25+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7299660,
+      "geography":"Hong Kong",
+      "title":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "priority":5,
+      "suiteTitle":"[Clips 3.0 SW - Video Assets - Elektra] LocQA1",
+      "scheduledStartDate":"2020-07-16T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890711,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T08:09:37+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303863,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890731,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-17T06:51:30+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303864,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890733,
+         "version":"TA"
+      },
+      "lastModifiedAt":"2020-07-17T06:50:28+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303865,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890766,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T06:50:31+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303866,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T06:50:34+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303867,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T07:53:32+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303868,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890732,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T06:50:38+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303869,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890735,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-17T06:50:41+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303870,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Share(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890711,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-17T08:08:43+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303871,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890731,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-17T09:29:42+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303872,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"In Progress"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890733,
+         "version":"TA"
+      },
+      "lastModifiedAt":"2020-07-17T06:57:27+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303873,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890766,
+         "version":"HK"
+      },
+      "lastModifiedAt":"2020-07-17T06:57:28+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303874,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T06:57:30+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303875,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890730,
+         "version":"ID"
+      },
+      "lastModifiedAt":"2020-07-17T06:57:32+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303877,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890732,
+         "version":"MY"
+      },
+      "lastModifiedAt":"2020-07-17T06:57:34+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303878,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890735,
+         "version":"VN"
+      },
+      "lastModifiedAt":"2020-07-17T06:57:36+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7303879,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][LocQA 1] Changes testing for GoldenGate Core(20A2323 from 20A309) - Part 1",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:48:53+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305262,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Preview",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Preview",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:48:57+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305264,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] AirPortCoreWLAN_corewlankit",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] AirPortCoreWLAN_corewlankit",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:00+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305265,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] CalendarFoundation",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] CalendarFoundation",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:04+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305266,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Photos_Apps",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Photos_Apps",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:08+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305267,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] TCC",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] TCC",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:11+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305268,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Classroom",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Classroom",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:14+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305269,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] CloudDocs_executables",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] CloudDocs_executables",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:18+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305270,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] CoreLocation",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] CoreLocation",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:21+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305271,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] EnergySaverPref",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] EnergySaverPref",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:24+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305272,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] PrintCenter",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] PrintCenter",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:28+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305273,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Printing",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Printing",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:31+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305274,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] QuickLook",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] QuickLook",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:35+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305275,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] QuickLookPlugins",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] QuickLookPlugins",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:38+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305276,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] SQLiteAutomatorActions",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] SQLiteAutomatorActions",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:42+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305277,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Photos",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Photos",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:46+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305278,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Collaboration",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Collaboration",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:49+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305279,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] EventKitUI_iosmac",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] EventKitUI_iosmac",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:53+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305280,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] AccessibilityBundles",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] AccessibilityBundles",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:49:57+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305281,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] DateTimePref",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] DateTimePref",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:00+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305282,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] DiskImages",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] DiskImages",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:04+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305283,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Dock",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Dock",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:07+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305284,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] FontUtility",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] FontUtility",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:11+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305285,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] iBooks",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] iBooks",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:15+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305287,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] loginwindow",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] loginwindow",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:19+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305288,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Stocks",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Stocks",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:22+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305289,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] TextInputMenuExtra",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] TextInputMenuExtra",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:26+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305290,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Terminal",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Terminal",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:29+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305291,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] CoreServicesUIAgent",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] CoreServicesUIAgent",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:33+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305292,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Commerce",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Commerce",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:36+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305293,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] TextEdit",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] TextEdit",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:39+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305294,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] CoreServicesSubFrameworks",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] CoreServicesSubFrameworks",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:43+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305295,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] DefaultMonitorPanels",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] DefaultMonitorPanels",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:47+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305296,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] DictionaryApplications",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] DictionaryApplications",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:51+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305298,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] DiscHelper",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] DiscHelper",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:54+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305299,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] DiskUtility",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] DiskUtility",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:50:58+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305300,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Foundation",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Foundation",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:01+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305301,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Imagekit",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Imagekit",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:05+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305302,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] QuickLook_markup",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] QuickLook_markup",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:09+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305304,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] PrintingPlugins_Executables",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] PrintingPlugins_Executables",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:13+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305305,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] PrintingPlugins",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] PrintingPlugins",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:16+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305306,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] iLifeMediaBrowser",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] iLifeMediaBrowser",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:20+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305307,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] loginwindowUI2",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] loginwindowUI2",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:24+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305308,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] PrintFaxPref",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] PrintFaxPref",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:27+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305309,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] IdentityServices",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] IdentityServices",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:31+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305310,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] ImageCapture",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] ImageCapture",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:35+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305311,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] ImageCaptureApps",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] ImageCaptureApps",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:38+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305312,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] IOBluetoothFamily_UI_frameworks",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] IOBluetoothFamily_UI_frameworks",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:42+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305313,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] Photos_iosmac",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] Photos_iosmac",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Stanley",
+         "lastName":"Au-Yeung",
+         "dsid":5803069,
+         "type":"Employee",
+         "email":"stanleyauyeung@apple.com"
+      },
+      "scheduledEndDate":"2020-07-24T12:00:00+0000",
+      "component":{
+         "name":"Loc:macOS SW",
+         "id":890734,
+         "version":"TH"
+      },
+      "lastModifiedAt":"2020-07-17T10:51:46+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7305314,
+      "geography":"Hong Kong",
+      "title":"[macOS 11.0 SW][AutoSpacing] StartupDisk",
+      "priority":5,
+      "suiteTitle":"[macOS 11.0 SW][AutoSpacing] StartupDisk",
+      "scheduledStartDate":"2020-07-17T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alvin",
+         "lastName":"Jim",
+         "dsid":214414,
+         "type":"Employee",
+         "email":"alvinjim@apple.com"
+      },
+      "scheduledEndDate":"2020-07-30T12:00:00+0000",
+      "component":{
+         "name":"Loc:Server SW",
+         "id":964169,
+         "version":"CH"
+      },
+      "lastModifiedAt":"2020-07-19T07:38:49+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7308902,
+      "geography":"Hong Kong",
+      "title":"[Server 5.11 SW][Loc QA 1] New/Changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[Server 5.11 SW][Loc QA 1] New/Changes & Quick Look",
+      "scheduledStartDate":"2020-07-20T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alvin",
+         "lastName":"Jim",
+         "dsid":214414,
+         "type":"Employee",
+         "email":"alvinjim@apple.com"
+      },
+      "scheduledEndDate":"2020-07-30T12:00:00+0000",
+      "component":{
+         "name":"Loc:Server SW",
+         "id":964171,
+         "version":"KH"
+      },
+      "lastModifiedAt":"2020-07-19T07:38:18+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7308903,
+      "geography":"Hong Kong",
+      "title":"[Server 5.11 SW][Loc QA 1] New/Changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[Server 5.11 SW][Loc QA 1] New/Changes & Quick Look",
+      "scheduledStartDate":"2020-07-20T12:00:00+0000",
+      "status":"Not Started"
+   },
+   {
+      "owner":{
+         "firstName":"Alvin",
+         "lastName":"Jim",
+         "dsid":214414,
+         "type":"Employee",
+         "email":"alvinjim@apple.com"
+      },
+      "scheduledEndDate":"2020-07-30T12:00:00+0000",
+      "component":{
+         "name":"Loc:Server SW",
+         "id":964170,
+         "version":"TA"
+      },
+      "lastModifiedAt":"2020-07-19T07:38:21+0000",
+      "keywords":[
+
+      ],
+      "scheduledID":7308904,
+      "geography":"Hong Kong",
+      "title":"[Server 5.11 SW][Loc QA 1] New/Changes & Quick Look",
+      "priority":5,
+      "suiteTitle":"[Server 5.11 SW][Loc QA 1] New/Changes & Quick Look",
+      "scheduledStartDate":"2020-07-20T12:00:00+0000",
+      "status":"Not Started"
+   }
+]

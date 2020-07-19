@@ -8,58 +8,8 @@
 
 import Cocoa
 
-extension ScheduledTest {
-    static var createScheduledTestTable: SQL {
-        return """
-        CREATE TABLE IF NOT EXISTS ScheduledTest (
-        scheduledID INTEGER PRIMARY KEY,
-        suiteID INTEGER,
-        status TEXT,
-        suiteTitle TEXT,
-        currentTester INTEGER,
-        component INTEGER,
-        createdAt DATETIME,
-        lastModifiedAt DATETIME,
-        scheduledStartDate TEXT,
-        scheduledEndDate TEXT,
-        cases TEXT,
-        relatedProblems TEXT,
-        diagnosis_history TEXT,
-        testConfiguration TEXT,
-        FOREIGN KEY (currentTester) REFERENCES Person(dsid),
-        FOREIGN KEY (component) REFERENCES Component(id),
-        FOREIGN KEY (cases) REFERENCES ScheduledTestCase(caseID),
-        FOREIGN KEY (relatedProblems) REFERENCES RelateProblem(id)
-        )
-        """
-    }
-    
-    static var upsert: SQL {
-        return """
-        INSERT OR REPLACE INTO ScheduledTest VALUES (:scheduledID, :suiteID, :status, :suiteTitle,
-        :currentTester, :component, :createdAt, :lastModifiedAt, :scheduledStartDate, :scheduledEndDate,
-        :cases, :relatedProblems, :diagnosis_history, :testConfiguration
-        );
-        """
-    }
-
-    static var fetchAll: SQL {
-        return "SELECT * FROM ScheduledTest;"
-    }
-
-    static var updateRow: SQL {
-        return "UPDATE SCHEduledTest SET suiteID=:suiteID WHERE scheduledID=:scheduledID"
-    }
-    
-    static var deleteRow: SQL {
-        return "DELETE FROM SCHEduledTest WHERE suiteID=:suiteID;"
-    }
-
-}
-
 class ViewController: NSViewController {
 
-    let service = NetworkManager()
     var dbPath: String = ""
     var content: [ScheduledTest] = [] {
         didSet {
@@ -67,7 +17,6 @@ class ViewController: NSViewController {
         }
     }
 
-    @IBOutlet weak var progressIndicator: NSProgressIndicator!
     @IBOutlet weak var tableView: NSTableView!
     @IBOutlet weak var messageLabel: NSTextField!
 
@@ -77,15 +26,11 @@ class ViewController: NSViewController {
         try! FileManager.default.createDirectory(
             atPath: path, withIntermediateDirectories: true, attributes: nil
         )
-        self.dbPath = "\(path)/database.sqlite"
-    }
-
-    @IBAction func createDatabase(_ sender: NSButton) {
-        createDatabase()
+        self.dbPath = "\(path)/test.sqlite"
     }
 
     @IBAction func loadData(_ sender: NSButton) {
-        fetchDataFromRadarAPI()
+        importDataToDatabase()
     }
 
     @IBAction func insertData(_ sender: NSButton) {
@@ -93,53 +38,57 @@ class ViewController: NSViewController {
     }
 
     @IBAction func updateRow(_ sender: NSButton) {
-        update()
+        let selectRow = tableView.selectedRow
+        guard selectRow != -1 else { return }
+        update(scheduledID: content[selectRow].scheduledID)
     }
 
     @IBAction func deleteRow(_ sender: NSButton) {
-        deleteRow()
+        let selectRow = tableView.selectedRow
+        guard selectRow != -1 else { return }
+        delete(scheduledID: content[selectRow].scheduledID)
     }
 
-    func fetchDataFromRadarAPI() {
-        progressIndicator.isHidden = false
-        progressIndicator.startAnimation(nil)
+    func importDataToDatabase() {
         self.messageLabel.stringValue = ""
-
-        service.requestScheduledTestIDs(since: -1)
-        service.requestScheduledTestIDsCompletion = { [weak self] (ids: [Int]) in
-            self?.service.fetchScheduledTest(with: ids)
-        }
-        
-        service.requestScheduledTestCompletion = { [weak self] (scheduledTests: [ScheduledTest]) in
-            DispatchQueue.main.async {
-                self?.progressIndicator.isHidden = true
-                self?.progressIndicator.stopAnimation(nil)
-                self?.messageLabel.stringValue = "count: \(String(describing: self?.service.scheduledTests.count))"
-            }
-        }
-    }
-    
-    @IBAction func reloadData(_ sender: NSButton) {
         do {
+            guard let path = Bundle.main.url(forResource: "ScheduledTest", withExtension: "json"), let data = try? Data(contentsOf: path) else {
+                fatalError("Failed to load json file.")
+            }
+            let scheduledTests = try JSONDecoder().decode([ScheduledTest].self, from: data)
+
             let database = try! SQLite.Database(path: "\(dbPath)")
-            let sqliteDecoder = SQLite.Decoder(database)
-            content = try sqliteDecoder.decode([ScheduledTest].self, using: ScheduledTest.fetchAll)
-            self.messageLabel.stringValue = "Rows: \(content.count)"
+            try database.execute(raw: ScheduledTest.createScheduledTestTable)
+            let sqliteEncoder = SQLite.Encoder(database)
+            try sqliteEncoder.encode(scheduledTests, using: ScheduledTest.upsert)
+            self.messageLabel.stringValue = "Insert \(database.totalChanges) rows."
+            reloadDatabase(database)
         } catch {
             print(error)
         }
     }
     
-    func update() {
+    func reloadDatabase(_ database: SQLite.Database) {
+        do {
+            let sqliteDecoder = SQLite.Decoder(database)
+            content = try sqliteDecoder.decode([ScheduledTest].self, using: ScheduledTest.fetchAll)
+            self.messageLabel.stringValue = "Total: \(content.count)"
+        } catch {
+            print(error)
+        }
+    }
+
+    func update(scheduledID: Int) {
         do {
             let database = try! SQLite.Database(path: "\(dbPath)")
             try database.execute(raw: ScheduledTest.updateRow)
             try database.write(ScheduledTest.updateRow, arguments: [
-                "suiteID": .integer(100),
-                "scheduledID": .integer(1501001)
+                "status": .text("status updated"),
+                "scheduledID": .integer(Int64(scheduledID))
                 ]
             )
             self.messageLabel.stringValue = "update: \(database.totalChanges)"
+            reloadDatabase(database)
         } catch {
             print(error)
         }
@@ -148,41 +97,29 @@ class ViewController: NSViewController {
     func insert() {
         do {
             let database = try! SQLite.Database(path: "\(dbPath)")
-            try database.execute(raw: ScheduledTest.createScheduledTestTable)
             let sqliteEncoder = SQLite.Encoder(database)
-            try sqliteEncoder.encode(service.scheduledTests, using: ScheduledTest.upsert)
             
-            let sqliteDecoder = SQLite.Decoder(database)
-            content = try sqliteDecoder.decode(Array<ScheduledTest>.self, using: ScheduledTest.fetchAll)
+            let component = Component(id: 1000, name: "new project", version: "new language")
+            let newRow = ScheduledTest(scheduledID: 1000, status: "new status", suiteTitle: "new title", component: component, lastModifiedAt: "2020-07-17T00:27:42+0000")
+            try sqliteEncoder.encode(newRow, using: ScheduledTest.upsert)
             self.messageLabel.stringValue = "Insert: \(database.totalChanges)"
+            reloadDatabase(database)
         } catch {
             print(error)
         }
     }
 
-    func deleteRow() {
+    func delete(scheduledID: Int) {
         do {
             let database = try! SQLite.Database(path: "\(dbPath)")
             try database.write(ScheduledTest.deleteRow, arguments: [
-                "suiteID": .integer(1545560)
+                "scheduledID": .integer(Int64(scheduledID))
                 ]
             )
             self.messageLabel.stringValue = "Delete: \(database.totalChanges)"
+            reloadDatabase(database)
         } catch {
             print(error)
-        }
-    }
-
-    func createDatabase() {
-        if FileManager.default.fileExists(atPath: dbPath) {
-            self.messageLabel.stringValue = "databse already exists."
-        } else {
-            do {
-                _ = try SQLite.Database(path: "\(dbPath)")
-                self.messageLabel.stringValue = "Database created. \(dbPath)"
-            } catch {
-                print(error)
-            }
         }
     }
 }
@@ -195,34 +132,33 @@ extension ViewController: NSTableViewDataSource {
 
 extension ViewController: NSTableViewDelegate {
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-  
+
         if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "scheduledIDCol") {
             guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "scheduledIDCell"), owner: self) as? NSTableCellView else { return nil }
-            cellView.textField?.integerValue = content[row].scheduledID
+            cellView.textField?.stringValue = String(content[row].scheduledID)
             return cellView
-        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "suiteIDCol") {
-            guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "suiteIDCell"), owner: self) as? NSTableCellView else { return nil }
-            cellView.textField?.integerValue = content[row].testSuiteID ?? -1
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "statusCol") {
+            guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "statusCell"), owner: self) as? NSTableCellView else { return nil }
+            cellView.textField?.stringValue = content[row].status
             return cellView
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "suiteTitleCol") {
             guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "suiteTitleCell"), owner: self) as? NSTableCellView else { return nil }
-            cellView.textField?.stringValue = content[row].suiteTitle ?? ""
+            cellView.textField?.stringValue = content[row].suiteTitle
             return cellView
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "componentCol") {
             guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "componentCell"), owner: self) as? NSTableCellView else { return nil }
-            cellView.textField?.stringValue = content[row].component?.name ?? "xxx"
+            cellView.textField?.stringValue = content[row].component.name
             return cellView
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "languageCol") {
             guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "languageCell"), owner: self) as? NSTableCellView else { return nil }
-            cellView.textField?.stringValue = content[row].component?.version ?? "xxx"
+            cellView.textField?.stringValue = content[row].component.version
             return cellView
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "lastModifiedAtCol") {
             guard let cellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "lastModifiedAtCell"), owner: self) as? NSTableCellView else { return nil }
-            cellView.textField?.stringValue = content[row].lastModifiedAt ?? ""
+            cellView.textField?.stringValue = content[row].lastModifiedAt
             return cellView
         }
 
         return nil
     }
 }
-
