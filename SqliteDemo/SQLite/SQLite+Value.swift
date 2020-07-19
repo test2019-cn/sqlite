@@ -1,9 +1,6 @@
 import Foundation
 import SQLite3
 
-typealias SQLiteArguments = Dictionary<String, SQLite.Value>
-typealias SQLiteRow = Dictionary<String, SQLite.Value>
-
 extension SQLite {
     public enum Value {
         case data(Data)

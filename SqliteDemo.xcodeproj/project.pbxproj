@@ -10,9 +10,7 @@
 		3406625B24C461BF00045E61 /* ScheduledTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3406625A24C461BE00045E61 /* ScheduledTest.json */; };
 		3406625D24C4629A00045E61 /* ScheduledTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406625C24C4629A00045E61 /* ScheduledTest.swift */; };
 		AA8BC6BC24BFE6CF00F9CF4A /* SQLite+Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BC6B924BFE6CF00F9CF4A /* SQLite+Encoder.swift */; };
-		AA8BC6BD24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BC6BA24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift */; };
 		AA8BC6BE24BFE6CF00F9CF4A /* SQLite+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BC6BB24BFE6CF00F9CF4A /* SQLite+Decoder.swift */; };
-		AA9A7DBB24BEDE7C0090AB2B /* SQLite+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A7DB624BEDE7C0090AB2B /* SQLite+Error.swift */; };
 		AA9A7DBC24BEDE7C0090AB2B /* SQLite+Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A7DB724BEDE7C0090AB2B /* SQLite+Value.swift */; };
 		AA9A7DBD24BEDE7C0090AB2B /* SQLite+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A7DB824BEDE7C0090AB2B /* SQLite+Database.swift */; };
 		AAA7BB3E24BD9B9400A58685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7BB3D24BD9B9400A58685 /* AppDelegate.swift */; };
@@ -58,9 +56,7 @@
 		3406625C24C4629A00045E61 /* ScheduledTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledTest.swift; sourceTree = "<group>"; };
 		3406625E24C47C9D00045E61 /* SQLite.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SQLite.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AA8BC6B924BFE6CF00F9CF4A /* SQLite+Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Encoder.swift"; sourceTree = "<group>"; };
-		AA8BC6BA24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+DateFormatter.swift"; sourceTree = "<group>"; };
 		AA8BC6BB24BFE6CF00F9CF4A /* SQLite+Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Decoder.swift"; sourceTree = "<group>"; };
-		AA9A7DB624BEDE7C0090AB2B /* SQLite+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Error.swift"; sourceTree = "<group>"; };
 		AA9A7DB724BEDE7C0090AB2B /* SQLite+Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Value.swift"; sourceTree = "<group>"; };
 		AA9A7DB824BEDE7C0090AB2B /* SQLite+Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SQLite+Database.swift"; sourceTree = "<group>"; };
 		AAA7BB3A24BD9B9400A58685 /* SqliteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,10 +102,8 @@
 		AA9A7DB224BEDE7C0090AB2B /* SQLite */ = {
 			isa = PBXGroup;
 			children = (
-				AA8BC6BA24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift */,
 				AA8BC6BB24BFE6CF00F9CF4A /* SQLite+Decoder.swift */,
 				AA8BC6B924BFE6CF00F9CF4A /* SQLite+Encoder.swift */,
-				AA9A7DB624BEDE7C0090AB2B /* SQLite+Error.swift */,
 				AA9A7DB724BEDE7C0090AB2B /* SQLite+Value.swift */,
 				AA9A7DB824BEDE7C0090AB2B /* SQLite+Database.swift */,
 			);
@@ -314,8 +308,6 @@
 				AA9A7DBD24BEDE7C0090AB2B /* SQLite+Database.swift in Sources */,
 				AA9A7DBC24BEDE7C0090AB2B /* SQLite+Value.swift in Sources */,
 				3406625D24C4629A00045E61 /* ScheduledTest.swift in Sources */,
-				AA8BC6BD24BFE6CF00F9CF4A /* SQLite+DateFormatter.swift in Sources */,
-				AA9A7DBB24BEDE7C0090AB2B /* SQLite+Error.swift in Sources */,
 				AAA7BB4024BD9B9400A58685 /* ViewController.swift in Sources */,
 				AA8BC6BC24BFE6CF00F9CF4A /* SQLite+Encoder.swift in Sources */,
 				AA8BC6BE24BFE6CF00F9CF4A /* SQLite+Decoder.swift in Sources */,
